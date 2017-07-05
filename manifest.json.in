@@ -1,0 +1,15 @@
+{
+    "name": "myfinance.fulvio",
+    "description": "Simple personal expenses manager to track your expenses",
+    "architecture": "@CLICK_ARCH@",
+    "title": "MyFinance",
+    "hooks": {
+        "MyFinance": {
+            "apparmor": "MyFinance/MyFinance.apparmor",
+            "desktop": "MyFinance/MyFinance.desktop"
+        }
+    },
+    "version": "1.0",
+    "maintainer": "fulvio <fulvio999@mail.com>",
+    "framework": "ubuntu-sdk-15.04.6-qml"
+}

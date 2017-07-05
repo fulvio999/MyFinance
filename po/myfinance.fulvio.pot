@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-24 17:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AboutProduct.qml:10
+msgid "Product Info"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:76
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:77
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:54
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:54
+msgid "Category Name:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:95
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:96
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:73
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:73
+msgid "Add Subcategory:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:114
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:111
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:99
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:88
+msgid "Add to List"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:151
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:148
+msgid "Subcategory List:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:190
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:187
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:168
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:157
+msgid "Remove"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:207
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:204
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:385
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:372
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:190
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:336
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:179
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:331
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:148
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:140
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpenseFoundDelegate.qml:50
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:158
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:152
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:183
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:166
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:236
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:243
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/InvalidInputPopUp.qml:17
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:233
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:239
+msgid "Close"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:224
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:221
+msgid "Edit..."
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:236
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:231
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:141
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:137
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:298
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:290
+msgid "Field required"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:264
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:259
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:299
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:226
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:221
+msgid "Save"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:275
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:270
+msgid "Reset All"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryPhone.qml:296
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:291
+msgid "Save Category ?"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:158
+msgid "Select the subcategory to remove"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:290
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:51
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:219
+msgid "Confirmation"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AddCategoryTablet.qml:294
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:62
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:61
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:215
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:207
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:231
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:223
+msgid "Cancel"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:68
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:67
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:220
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:212
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpenseFoundDelegate.qml:56
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:236
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:228
+msgid "Execute"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:75
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:74
+msgid "Done, deleted"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:107
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:105
+msgid "Currency (ISO format):"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:123
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:121
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:281
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:273
+msgid "Update"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:211
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:209
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:174
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:176
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:172
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:174
+msgid "From:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:257
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:250
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:192
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:196
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:190
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:194
+msgid "To:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:297
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:286
+msgid "Category:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:302
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:291
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:183
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:176
+msgid "Choose..."
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:320
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:309
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:342
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:337
+msgid "Delete"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:348
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:335
+msgid "Help"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationPhone.qml:375
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:362
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:213
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:220
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:134
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:167
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:211
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:217
+msgid "Confirm"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/AppConfigurationTablet.qml:161
+msgid "Load Data"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/DataBaseEraser.qml:48
+msgid "Succesfully Removed ALL data"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:128
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:117
+msgid "Subcategory:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:201
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:190
+msgid "Show/Edit..."
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:238
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:233
+msgid "Delete Category"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryPhone.qml:253
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditCategoryTablet.qml:248
+msgid "Save Category modifications ?"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:49
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:49
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:54
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:54
+msgid "Amount:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:75
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:71
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:81
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:75
+msgid "Date:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:122
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:114
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:131
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:125
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:157
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:140
+msgid "SubCategory: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:136
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:128
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:146
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:140
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:171
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:154
+msgid "Select"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:161
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:178
+msgid "SubCategory:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:191
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:183
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:208
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:200
+msgid "Note:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpensePhone.qml:285
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:277
+msgid "Confirm the modifications ?"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/EditExpenseTablet.qml:153
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:170
+msgid "Sub Category:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpenseFoundDelegate.qml:41
+msgid "Delete selected Expsense ?"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpenseFoundDelegate.qml:89
+msgid "OK: Done, Reload the expense List"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:281
+msgid "Insert expense"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesPhone.qml:289
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:281
+msgid "Confirm the insertion ?"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ExpensesTablet.qml:273
+msgid "Insert"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:62
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:51
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:29
+msgid "Date from:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:109
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:92
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:69
+msgid "Date To:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:201
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:179
+msgid "Filter:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:206
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpenseTablet.qml:185
+msgid "All SubCategory"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/FindExpensePhone.qml:232
+msgid "Search/Reload"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:57
+msgid "Report Types"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:96
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:98
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:104
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:107
+msgid "Show/Refresh"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportPhone.qml:116
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:118
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:116
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:119
+msgid "Situation at: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/GlobalReportTablet.qml:63
+msgid "Report Type:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/HelpPagePhone.qml:49
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/HelpPageTablet.qml:49
+msgid "Application Help Page"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/HelpPagePhone.qml:70
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/HelpPageTablet.qml:70
+#, qt-format
+msgid "<a href=\"%1\">http://www.xe.com/iso4217.php</a>"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ImportDataAlreadyDone.qml:9
+msgid "Attention"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ImportDataAlreadyDone.qml:12
+msgid "Data already loaded, can't redo it"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/InvalidInputPopUp.qml:9
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ItemNotFound.qml:8
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationFailInsertExpense.qml:9
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationFailSubCategory.qml:12
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationSuccessResult.qml:11
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationSuccessResultRestart.qml:9
+msgid "Operation Result"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/InvalidInputPopUp.qml:12
+msgid "Invalid input value(s)"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ItemNotFound.qml:9
+msgid "No People Found !"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:114
+msgid "About"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:215
+msgid "Search"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:240
+msgid "Total category found: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:254
+msgid "Global Reports"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:295
+msgid "Manage expenses for: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:405
+msgid "Statistics for category: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:455
+msgid "Edit category: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:514
+msgid "Find Expense for category: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:587
+msgid "Edit Expense for category: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:621
+msgid "Application Configuration"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:649
+msgid "Category Global Report"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/Main.qml:676
+msgid "Help Page"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationFailInsertExpense.qml:14
+msgid ""
+"Missing required value, or invalid 'Amount' <br/>(<b>Note: 'Amount' decimal "
+"separator is . </b>)"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationFailSubCategory.qml:16
+msgid "Attention: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationStatusDialog.qml:19
+msgid "Informations"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationSuccessResult.qml:14
+msgid "OK: "
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/OperationSuccessResultRestart.qml:12
+msgid ""
+"Operation executed successfully: <br/> <b> ATTENTION: RESTART IS REQUIRED </"
+"b>"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:153
+msgid "Monthly"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/ReportSelectorForm.qml:154
+msgid "weekly"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportPhone.qml:64
+msgid "Available Reports"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/MyFinance/MyFinance/SubCategoryReportTablet.qml:72
+msgid "Available Report:"
+msgstr ""
+
+#: /home/fulvio/Dropbox/ubuntu-devel/build-MyFinance-UbuntuSDK_for_phone_desktop_kit_device_i386_GCC_i386_ubuntu_sdk_15_04-Debug/MyFinance/MyFinance.desktop.h:1
+msgid "MyFinance"
+msgstr ""
