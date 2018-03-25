@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MyFinance
+Name[es]=MisFinanzas
+Exec=qmlscene %U MyFinance/Main.qml
+Icon=MyFinance/MyFinance.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
