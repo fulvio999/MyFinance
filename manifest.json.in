@@ -1,7 +1,7 @@
 {
     "name": "myfinance.fulvio",
     "description": "Simple personal expenses manager to track your expenses",
-    "architecture": "@CLICK_ARCH@",
+    "architecture": "all",
     "title": "MyFinance",
     "hooks": {
         "MyFinance": {
@@ -9,7 +9,7 @@
             "desktop": "MyFinance/MyFinance.desktop"
         }
     },
-    "version": "1.0",
+    "version": "1.1",
     "maintainer": "fulvio <fulvio999@mail.com>",
     "framework": "ubuntu-sdk-15.04.6-qml"
 }

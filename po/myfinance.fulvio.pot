@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-26 16:36+0000\n"
+"POT-Creation-Date: 2018-03-26 16:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -460,6 +460,7 @@ msgid "Confirm the modifications"
 msgstr ""
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditExpenseTablet.qml:38
+#: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResultRestart.qml:12
 msgid "Operation executed successfully"
 msgstr ""
 
@@ -915,7 +916,7 @@ msgid "OK"
 msgstr ""
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResultRestart.qml:12
-msgid "Operation executed successfully: A RESTART IS REQUIRED"
+msgid "PLEASE, A RESTART IS REQUIRED"
 msgstr ""
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ReportSelectorForm.qml:153

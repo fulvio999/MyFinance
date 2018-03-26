@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-26 16:36+0000\n"
+"POT-Creation-Date: 2018-03-26 16:54+0000\n"
 "PO-Revision-Date: 2018-03-25 00:52+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
@@ -481,6 +481,7 @@ msgid "Confirm the modifications"
 msgstr "¿Confirmar las modificaciones?"
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditExpenseTablet.qml:38
+#: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResultRestart.qml:12
 msgid "Operation executed successfully"
 msgstr ""
 
@@ -961,11 +962,8 @@ msgid "OK"
 msgstr "Correcto: "
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResultRestart.qml:12
-#, fuzzy
-msgid "Operation executed successfully: A RESTART IS REQUIRED"
+msgid "PLEASE, A RESTART IS REQUIRED"
 msgstr ""
-"Operación ejecutada correctamente: <br/> <b> ATENCIÓN: SE NECESITA REINICIAR "
-"</b>"
 
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ReportSelectorForm.qml:153
 msgid "Monthly"
@@ -1025,6 +1023,12 @@ msgstr "Informes disponibles"
 #: /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/build/MyFinance/MyFinance.desktop.h:1
 msgid "MyFinance"
 msgstr "MisFinanzas"
+
+#, fuzzy
+#~ msgid "Operation done successfully: A RESTART IS REQUIRED"
+#~ msgstr ""
+#~ "Operación ejecutada correctamente: <br/> <b> ATENCIÓN: SE NECESITA "
+#~ "REINICIAR </b>"
 
 #~ msgid "Edit category: "
 #~ msgstr "Editar categoría:"

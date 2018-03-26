@@ -9,7 +9,7 @@ Dialog {
     title: i18n.tr("Operation Result")
 
     Label{
-        text: i18n.tr("Operation executed successfully: A RESTART IS REQUIRED")
+        text: i18n.tr("Operation executed successfully")+": <br/> "+i18n.tr("PLEASE, A RESTART IS REQUIRED")
         color: UbuntuColors.green
     }
 
