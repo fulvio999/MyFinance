@@ -16,7 +16,7 @@ import "utility.js" as Utility
 import "subCategoryReportChart.js" as SubCategoryReportChart
 import "QChart.js" as Charts
 
-//--------------- Display statistics reports (charts) for the chosen SUB-Category -------
+//-------- Display reports (charts) for the chosen SUB-Category included in the chosen Categeory (eg: Home, Travel...) -------
 
 Column{
     id: reportPageColumn
@@ -27,7 +27,8 @@ Column{
     property string currency : Storage.getConfigParamValue('currency');
     property int currentReportItemSelected : 0;
     /* a local properties used to intercept selected category changes event */
-    property int selectedCategoryId: statisticsPage.categoryId
+    property int selectedCategoryId: statisticsPage.categoryId;
+
 
     /* transparent placeholder: required to place the content under the header */
     Rectangle {
@@ -51,9 +52,13 @@ Column{
 
     ListModel {
         id: reportTypeModel
-        ListElement { name: "<b>Instant Report</b>"; description: "show the subcategory expenses current amount"; }
-        ListElement { name: "<b>Last Month Report</b>"; description: "show the subcategory expenses in the last month"; }
-        ListElement { name: "<b>Custom Report</b>"; description: "show the subcategory expenses in a custom range"; }
+    }
+
+    /* fill listmodel using this method because allow you to use i18n */
+    Component.onCompleted: {
+          reportTypeModel.append( { name: "<b>"+i18n.tr("Instant Report")+"</b>", description: i18n.tr("subcategory expenses at current date"), value:1 } );
+          reportTypeModel.append( { name: "<b>"+i18n.tr("Last Month Report")+"</b>", description: i18n.tr("subcategory expenses in the last month"), value:2 } );
+          reportTypeModel.append( { name: "<b>"+i18n.tr("Custom Report")+"</b>", description: i18n.tr("subcategory expenses in a custom range"), value:3 } );
     }
 
     Row{
@@ -69,7 +74,7 @@ Column{
         Label {
             id: reportTypeItemSelectorLabel
             anchors.verticalCenter: reportTypeItemSelector.Center
-            text: "<b>"+i18n.tr("Available Report:")+"</b>"
+            text: "<b>"+i18n.tr("Available Report")+":"+"</b>"
         }
 
         Rectangle{
@@ -107,7 +112,7 @@ Column{
             text: i18n.tr("Show/Refresh")
             onClicked: {
 
-                    if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).name === "<b>Instant Report</b>") {
+                    if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).value === 1) {  /* instant report */
 
                         SubCategoryReportChart.getLegendDataInstantReport(statisticsPage.categoryId);
 
@@ -116,10 +121,10 @@ Column{
                         subCategoryInstantReportChartRow.visible = true;
                         subCategoryLastMonthChartRow.visible = false;
                         subCategoryCustomRangeChartRow.visible = false;
-                        chartTitleLabel.text= "<b>"+i18n.tr("Situation at: ")+ Qt.formatDateTime(new Date(), "dd MMMM yyyy")+"</b>"+" (date format is yyyy-mm-dd)"
+                        chartTitleLabel.text= "<b>"+i18n.tr("Situation at")+": "+ Qt.formatDateTime(new Date(), "dd MMMM yyyy")+"</b> "+i18n.tr("(date format is yyyy-mm-dd)")
                         chartTitleLabelContainer.visible = true;
 
-                    } else if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).name === "<b>Last Month Report</b>") {
+                    } else if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).value === 2) { /* monthly report */
 
                         var today = Utility.getTodayDate();  //eg: Wed Mar 29 00:00:00 2017 GMT
                         var monthAgo = Utility.addDaysToDate(today, -30);
@@ -129,7 +134,7 @@ Column{
                         /* true if no data found */
                         if(lastMonthChartListModel.count === 0){
 
-                           chartTitleLabel.text= "<b>"+i18n.tr("NO DATA FOUND")+"</b>"+i18n.tr("for Monthly report from: ")+Utility.formatDateToString(monthAgo)+ "  to: "+Utility.formatDateToString(today)+"</b>"+" (date format is yyyy-mm-dd)"
+                           chartTitleLabel.text= "<b>"+i18n.tr("NO DATA FOUND")+"</b> "+i18n.tr("for Monthly report from")+": "+Utility.formatDateToString(monthAgo)+" "+ i18n.tr("to")+": "+Utility.formatDateToString(today)+"</b> "+i18n.tr("(date format is yyyy-mm-dd)")
                            chartTitleLabelContainer.visible = true;
 
                         }else{
@@ -139,11 +144,11 @@ Column{
                             subCategoryInstantReportChartRow.visible = false;
                             subCategoryCustomRangeChartRow.visible = false;
                             subCategoryLastMonthChartRow.visible = true;
-                            chartTitleLabel.text= "<b>"+"Monthly report from:  "+Utility.formatDateToString(monthAgo)+ "  to: "+Utility.formatDateToString(today)+"</b>"+" (date format is yyyy-mm-dd)"
+                            chartTitleLabel.text= "<b>"+i18n.tr("Monthly report from")+": "+Utility.formatDateToString(monthAgo)+ i18n.tr("to")+": "+Utility.formatDateToString(today)+"</b> "+i18n.tr("(date format is yyyy-mm-dd)")
                             chartTitleLabelContainer.visible = true;
                         }
 
-                    } else if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).name === "<b>Custom Report</b>") {
+                    } else if (reportTypeModel.get(reportTypeItemSelector.selectedIndex).value === 3) { /* custom report */
 
                          /* allow to specify the time range and load data for chart legend */
                          PopupUtils.open(popoverTimeRangeChooserComponent, showChartButton)
@@ -171,7 +176,7 @@ Column{
 
              Row{
                  Label{
-                     text: "<b>"+i18n.tr("From:")+"</b>"
+                     text: "<b>"+i18n.tr("From")+": </b>"
                  }
              }
 
@@ -191,7 +196,7 @@ Column{
 
              Row{
                  Label{
-                     text: "<b>"+i18n.tr("To:")+"</b>"
+                     text: "<b>"+i18n.tr("To")+": </b>"
                  }
              }
 
@@ -221,13 +226,13 @@ Column{
                          var to = new Date (timeToPicker.date);
                          var from = new Date (timeFromPicker.date);
 
-                         chartTitleLabel.text= "<b>"+"Custom report from:  "+Utility.formatDateToString(from)+ "  to: "+Utility.formatDateToString(to)+"</b>"+" (date format is yyyy-mm-dd)"
+                         chartTitleLabel.text= "<b>"+i18n.tr("Custom report from")+": "+Utility.formatDateToString(from)+i18n.tr("to")+": "+Utility.formatDateToString(to)+"</b> "+i18n.tr("(date format is yyyy-mm-dd)")
 
                          SubCategoryReportChart.getLegendDataForCustomRangeReport(Utility.formatDateToString(from),Utility.formatDateToString(to),statisticsPage.categoryId);
 
                          /* if no data found create an empty chart legend */
                          if(customRangeChartListModel.count === 0){
-                             chartTitleLabel.text= "<b>"+i18n.tr("NO DATA FOUND")+"</b>"+i18n.tr("from: ")+Utility.formatDateToString(from)+ " to: "+Utility.formatDateToString(to)+" (date format is yyyy-mm-dd)"
+                             chartTitleLabel.text= "<b>"+i18n.tr("NO DATA FOUND")+"</b>"+i18n.tr("from")+": "+Utility.formatDateToString(from)+ i18n.tr("to")+": "+Utility.formatDateToString(to)+i18n.tr("(date format is yyyy-mm-dd)")
                          }else{
                             sub_category_report_history_custom_chart.chartData = SubCategoryReportChart.getChartDataCustomRangeReport(Utility.formatDateToString(from),Utility.formatDateToString(to),statisticsPage.categoryId);
                          }

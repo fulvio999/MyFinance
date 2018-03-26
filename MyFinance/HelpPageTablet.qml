@@ -60,20 +60,31 @@ Column {
             height: helpPageColumn.height
 
             textFormat:TextEdit.RichText
-            text: "MyFinance is a simple expenses manager/tracker for personal use. <br/><br/> "+"<b>"+" How it works"+"</b>"+"<br/>"+
-                  "Is based on the concept of 'Category' of Expense (eg: Travel, Home, ....) and his subCategory to define a classification of the expense"+"<br/>"+
-                  "(eg: plane,train,car for 'Travel' category)."+"<br/>"+
-                  "Users can add his custom category and subCategory or edit the default one created during the installation."+"<br/>"+
-                  "The default currency is set to EUR, but can be changed in the configuration page."+"<br/>"+
-                  "The database is located under the hidden folder: ~phablet/.local/share/myfinance.fulvio/"+"<br/><br/>"+
+            text: i18n.tr("MyFinance is a simple expenses manager/tracker")+
+                  "<br/><br/> "+
+                  i18n.tr("Is based on the concept of 'Category' of expense (example: Travel, Home, ....) and his subCategory to define a classification")
+                  +"<br/>"+
+                  i18n.tr("(example: plane,train,car for 'Travel' category)")
+                  +"<br/>"+
+                  i18n.tr("Users can add custom category and subCategory or edit the default ones")+
+                  "<br/>"+
+                  i18n.tr("The default currency is set to EUR, but can be changed in the configuration page")+
+                  "<br/>"+
 
-                  "<b>NOTE:</b>The accepted currency values, MUST be in ISO format (<b>3 letters</b>, eg: EUR,USD) <br/> (See: "+colorLinks(i18n.tr("<a href=\"%1\">http://www.xe.com/iso4217.php</a>").arg(website))+"<br/> After his modification, is necessary restart the application !"+"<br/><br/>"+
+                  i18n.tr("NOTE: Currency values, MUST be in ISO format (3 letters, examle: EUR,USD)")+
+                  " <br/>"+
+                  i18n.tr("See")+  colorLinks(i18n.tr("<a href=\"%1\">http://www.xe.com/iso4217.php</a>").arg(website))+
+                  "<br/>"+
+                  i18n.tr("After his modification, restart the application !")
+                  +"<br/><br/>"+
 
-                  "<b>Reports</b>"+"<br/>"+
-                  "There are two type of report:"+"<br/>"+
-                  "<i>Instant Report</i> : is a progressive report that show the expense situation from the begin at today <br/> (based on the currently saved expenses)"+"<br/>"+
-                  "<i>History Report</i> : show expense situation for the last month or for a custom period."+"<br/>"
-
+                  "<b>"+i18n.tr("Reports types")+"</b>"+
+                  "<br/>"+
+                  i18n.tr("There are two type of report")+":<br/>"+
+                  i18n.tr("Instant Report: a progressive report that show the expense from the begin at today")+
+                  "<br/>"+
+                  i18n.tr("History Report: expenses situation for the last month or for a custom period")+
+                  "<br/>"
 
             readOnly: true
         }

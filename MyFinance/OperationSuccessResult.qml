@@ -4,19 +4,19 @@ import Ubuntu.Components.Popups 1.3
 
 
 /* Notify an operation executed successfully */
-Dialog {   
+Dialog {
     id: operationSuccessDialog
     /* the message to display (See AddCategoryXXX.qml)  */
     property string msg;
     title: i18n.tr("Operation Result")
 
     Label{
-        text: i18n.tr("OK: " +msg)
+        text: i18n.tr("OK")+": "+msg
         color: UbuntuColors.green
     }
 
     Button {
-        text: "Close"
+        text: i18n.tr("Close")
         onClicked:
             PopupUtils.close(operationSuccessDialog)
     }

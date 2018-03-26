@@ -36,7 +36,7 @@ Column {
     Component {
         id: operationResultDialogue
         OperationSuccessResult{msg:i18n.tr("Operation executed successfully")}
-    }   
+    }
 
     Row{
         id: amountRow
@@ -46,7 +46,7 @@ Column {
         Label {
             id: amountLabel
             anchors.verticalCenter: amountField.verticalCenter
-            text: i18n.tr("Amount:")
+            text: i18n.tr("Amount")+":"
         }
 
         TextField {
@@ -68,7 +68,7 @@ Column {
         Label {
             id: expenseDateLabel
             anchors.verticalCenter: expenseDateButton.verticalCenter
-            text: i18n.tr("Date:")
+            text: i18n.tr("Date")+":"
         }
 
         /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -111,7 +111,7 @@ Column {
 
             Dialog {
                 id: subCategoryPickerDialog
-                title: i18n.tr("SubCategory: ")+modelListSubCategory.count +i18n.tr(" found")
+                title: i18n.tr("SubCategory")+": "+modelListSubCategory.count+" "+i18n.tr("found")
 
                 OptionSelector {
                     id: subCategoryOptionSelector
@@ -150,7 +150,7 @@ Column {
         //-------------------------------------
         Label{
             anchors.verticalCenter: subCategoryChooserButton.verticalCenter
-            text: i18n.tr("Sub Category:")
+            text: i18n.tr("Sub Category")+":"
         }
 
         Button {
@@ -180,7 +180,7 @@ Column {
         Label {
             id: noteLabel
             anchors.verticalCenter: noteTextArea.verticalCenter
-            text: i18n.tr("Note:")
+            text: i18n.tr("Note")+":"
         }
 
         TextArea {
@@ -200,7 +200,7 @@ Column {
 
         Dialog {
             id: dialogue
-            title: "Confirmation"
+            title: i18n.tr("Confirmation")
             modal:true
             text:""  /* parameter passed by the caller button */
             Button {
@@ -274,13 +274,10 @@ Column {
             iconName: "save"
             width: units.gu(12)
             onClicked: {
-                PopupUtils.open(confirmUpdateDialog,insertButton,{text: i18n.tr("Confirm the modifications ?")})
+                PopupUtils.open(confirmUpdateDialog,insertButton,{text: i18n.tr("Confirm the modifications")+" ?"})
             }
         }
     }
 
 
 }
-
-
-

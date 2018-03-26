@@ -9,7 +9,7 @@ import "storage.js" as Storage
 /*
     Delegate component that display the category saved in the DB as ListItem (See Main.qml)
 */
-Component {   
+Component {
     id: categoryListDelegate
 
     Item {
@@ -34,7 +34,7 @@ Component {
             onClicked: {
                 loadingPageActivity.running = true
                 adaptivePageLayout.addPageToNextColumn(categoryListPage, categoryExpensePage,
-                                                       {                                                         
+                                                       {
                                                            /* <page-variable-name>:<property-value from db> */
                                                            id:id, /* id of the category */
                                                            categoryName:cat_name,
@@ -61,15 +61,15 @@ Component {
                 //my new width: (background.width - 20)/2; height: categoryItem.height
                 width: background.width - 20; height: categoryItem.height
                 anchors.verticalCenter: topLayout.Center
-                spacing: 1               
+                spacing: 1
 
-                Label {                   
+                Label {
                     text: cat_name
                     fontSize: "large"
                 }
 
                 Label {
-                    text: "Expense (at "+Qt.formatDateTime(new Date(), "dd MMMM yyyy")+ " ): "+Number(current_amount).toFixed(2)+ " "+currency
+                    text: i18n.tr("Expense (at ") +Qt.formatDateTime(new Date(), "dd MMMM yyyy")+ " ): "+Number(current_amount).toFixed(2)+ " "+currency
                     fontSize: "small"
                 }
             }

@@ -33,6 +33,10 @@ MainView {
     width: units.gu(160)
     height: units.gu(90)
 
+    /* phone */
+    //width: units.gu(50)
+    //height: units.gu(96)
+
     /* Settings file is saved in ~user/.config/<applicationName>/<applicationName>.conf  File */
     Settings {
         id:settings
@@ -70,7 +74,7 @@ MainView {
     Component {
         id: dataBaseEraser
         DataBaseEraser{}
-    }   
+    }
 
     /* On first use, show a popup with some base informations */
     Component {
@@ -121,7 +125,7 @@ MainView {
                 trailingActionBar.actions: [
                     Action {
                         iconName: "list-add"
-                        text: "Add"
+                        text: i18n.tr("Add")
                         onTriggered:{                           //sintax: (current-page, page to add)
                             adaptivePageLayout.addPageToNextColumn(categoryListPage, addCategoryPage)
                         }
@@ -129,7 +133,7 @@ MainView {
 
                     Action {
                         iconName: "delete"
-                        text: "Delete"
+                        text: i18n.tr("Delete")
                         onTriggered:{
                             PopupUtils.open(dataBaseEraser)
                         }
@@ -137,7 +141,7 @@ MainView {
 
                     Action {
                         iconName: "settings"
-                        text: "Settings"
+                        text: i18n.tr("Settings")
                         onTriggered:{
 
                              adaptivePageLayout.addPageToNextColumn(categoryListPage,configurationPage,
@@ -199,8 +203,8 @@ MainView {
                                 anchors.horizontalCenter: parent.horizontalCenter
 
                                 TextField{
-                                    id: searchField                                  
-                                    placeholderText: "category to search"
+                                    id: searchField
+                                    placeholderText: i18n.tr("category to search")
                                     onTextChanged: {
                                         if(text.length == 0 ) {
                                             Storage.getAllCategory();
@@ -229,7 +233,7 @@ MainView {
                                         }
                                     }
                                 }
-                            }                           
+                            }
 
                             Row{
                                 id:row2
@@ -237,7 +241,7 @@ MainView {
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 Label{
                                     id: categoryFoundLabel
-                                    text: i18n.tr("Total category found: ") + listView.count
+                                    text: i18n.tr("Total category found")+": " + listView.count
                                     font.bold: false
                                     font.pointSize: units.gu(1.2)
                                 }
@@ -250,7 +254,7 @@ MainView {
                                 width: parent.width
 
                                 Button{
-                                    id: showReportbutton                                   
+                                    id: showReportbutton
                                     text: i18n.tr("Global Reports")
                                     color: UbuntuColors.green
                                     height: units.gu(4)
@@ -291,8 +295,8 @@ MainView {
             property string currentExpenseAmount  /* current expense amout for a category */
 
             header: PageHeader {
-                id: headerDetailsPage 
-                title: i18n.tr("Manage expenses for: ") + "<b>" +categoryExpensePage.categoryName +"</b>"
+                id: headerDetailsPage
+                title: i18n.tr("Manage expenses for")+": " + "<b>" +categoryExpensePage.categoryName +"</b>"
             }
 
             /* to set default values on category changes */
@@ -353,7 +357,7 @@ MainView {
             id: addCategoryPage
 
             header: PageHeader {
-                title: "Add new Category and subcategory"
+                title: i18n.tr("Add new Category and subcategory")
             }
 
             Flickable {
@@ -402,7 +406,7 @@ MainView {
             property string toRefresh;
 
             header: PageHeader {
-               title: i18n.tr("Statistics for category: ")+ "<b>"+statisticsPage.categoryName +"</b>"
+               title: i18n.tr("Statistics for category")+": "+ "<b>"+statisticsPage.categoryName +"</b>"
             }
 
             Layouts {
@@ -452,7 +456,7 @@ MainView {
             }
 
             header: PageHeader {
-               title: i18n.tr("Edit category: ") + "<b>"+categoryEditPage.categoryName +"</b>"
+               title: i18n.tr("Edit category") +": <b>"+categoryEditPage.categoryName +"</b>"
             }
 
             /* to have a scrollable column when the keyboard cover some input field */
@@ -511,7 +515,7 @@ MainView {
                 property string currency: Storage.getConfigParamValue('currency');
 
                 header: PageHeader {
-                   title: i18n.tr("Find Expense for category: ") + "<b>"+findExpensePage.categoryName +"</b>"
+                   title: i18n.tr("Find Expense for category") +": "+ "<b>"+findExpensePage.categoryName +"</b>"
                 }
 
                 ListModel {
@@ -520,7 +524,7 @@ MainView {
 
                 onCategoryIdChanged: {
                     /* clean previous result search for a different category */
-                    expenseModel.clear();                   
+                    expenseModel.clear();
                 }
 
                 Component {
@@ -584,7 +588,7 @@ MainView {
 
             header: PageHeader {
                 id: headerEditExpensePage
-                title: i18n.tr("Edit Expense for category: ") + "<b>" +categoryExpensePage.categoryName +"</b>"
+                title: i18n.tr("Edit Expense for category") +": "+ "<b>" +categoryExpensePage.categoryName +"</b>"
             }
 
             /* Show the details of the selected person */
@@ -699,4 +703,3 @@ MainView {
 
 
 }
-

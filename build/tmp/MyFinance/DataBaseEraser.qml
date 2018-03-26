@@ -10,7 +10,7 @@ import "storage.js" as Storage
 /* Show a Dialog where the user can choose to delete ALL the saved expense */
 Dialog {
     id: dataBaseEraserDialog
-    text: "<b>"+ i18n.tr("Remove ALL Expenses and Category ?")+ "<br/>"+i18n.tr("(there is no restore)")+"</b>"
+    text: "<b>"+ i18n.tr("Remove ALL Expenses and Category")+" ?"+"<br/>"+i18n.tr("(there is no restore)")+"</b>"
 
     Rectangle {
         width: 180;
@@ -33,13 +33,13 @@ Dialog {
 
                     Button {
                         id: closeButton
-                        text: "Close"                        
+                        text: i18n.tr("Close")
                         onClicked: PopupUtils.close(dataBaseEraserDialog)
                     }
 
                     Button {
                         id: importButton
-                        text: "Delete"
+                        text: i18n.tr("Delete")
                         color: UbuntuColors.orange
                         onClicked: {
                             loadingPageActivity.running = true

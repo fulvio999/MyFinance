@@ -11,7 +11,7 @@ Dialog {
 
      Label{
         anchors.horizontalCenter: operationFailNewExpenseDialog.Center
-        text: i18n.tr("Missing required value, or invalid 'Amount' <br/>(<b>Note: 'Amount' decimal separator is . </b>)")
+        text: i18n.tr("Missing required value, or invalid 'Amount'")+" <br/><b> "+i18n.tr("Note: decimal separator is . ")+"</b>"
         color: UbuntuColors.red
     }
 
@@ -21,4 +21,3 @@ Dialog {
             PopupUtils.close(operationFailNewExpenseDialog)
     }
 }
-

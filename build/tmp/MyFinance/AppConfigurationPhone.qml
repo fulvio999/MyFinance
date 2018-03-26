@@ -50,7 +50,7 @@ Column{
             id: confirmDeleteDialogue
             title: i18n.tr("Confirmation")
             modal:true
-            text:i18n.tr("Remove Expenses in the range (no restore) ?")
+            text:i18n.tr("Remove Expenses in the range (no restore)")+" ?"
 
             Label{
                 id: deleteSuccessLabel
@@ -72,7 +72,7 @@ Column{
                     /* remove the expense in the range and update the data used to generate the reports */
                     var deletedExpense = Storage.deleteExpenseByCategoryAndTime(dateFromButton.text,dateToButton.text,idCategory);
 
-                    deleteSuccessLabel.text = i18n.tr("Done, deleted")+": "+deletedExpense+" expense(s)"
+                    deleteSuccessLabel.text = i18n.tr("Done, deleted")+": "+deletedExpense+" "+i18n.tr("expense(s)")
                     executeDeleteButton.enabled = false;
                     /* refresh */
                     Storage.getAllCategory();
@@ -104,7 +104,7 @@ Column{
         Label {
             id: currencyLabel
             anchors.verticalCenter: currencyField.verticalCenter
-            text: "* "+i18n.tr("Currency (ISO format):")
+            text: "* "+i18n.tr("Currency (ISO format)")+":"
         }
 
         TextField {
@@ -166,7 +166,7 @@ Column{
 
         Button {
             id: loadDefaultDataButton
-            text: "Load Data"
+            text: i18n.tr("Load Data")
             width: units.gu(20)
             onClicked: {
                 var result = Storage.insertDefaultData();
@@ -208,7 +208,7 @@ Column{
         Label {
             id: fromDateLabel
             anchors.verticalCenter: dateFromButton.verticalCenter
-            text: i18n.tr("From:")
+            text: i18n.tr("From")+":"
         }
 
         /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -254,7 +254,7 @@ Column{
         Label {
             id: toDateLabel
             anchors.verticalCenter: dateToButton.verticalCenter
-            text: i18n.tr("To:")
+            text: i18n.tr("To")+":"
         }
 
         /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -294,7 +294,7 @@ Column{
 
         Label{
             anchors.verticalCenter: categoryChooserButton.verticalCenter
-            text: "* "+i18n.tr("Category:")
+            text: "* "+i18n.tr("Category")+":"
         }
 
         Button {
@@ -322,7 +322,7 @@ Column{
             width: units.gu(14)
             onClicked: {
 
-               if(categoryChooserButton.text !== "Choose..."){
+               if(categoryChooserButton.text !==  i18n.tr("Choose...") ){
                   PopupUtils.open(confirmDeleteDialogueComponent, confirmDeleteButton)
                }else{
                    PopupUtils.open(invalidInputDialog)

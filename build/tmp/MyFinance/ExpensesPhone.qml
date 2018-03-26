@@ -78,7 +78,7 @@ Column {
         Label {
             id: expenseDateLabel
             anchors.verticalCenter: expenseDateButton.verticalCenter
-            text: i18n.tr("Date:")
+            text: i18n.tr("Date")+":"
         }
 
         /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -128,7 +128,7 @@ Column {
 
             Dialog {
                 id: subCategoryPickerDialog
-                title: i18n.tr("SubCategory: "+modelListSubCategory.count +" found")
+                title: i18n.tr("SubCategory")+": "+modelListSubCategory.count +" "+i18n.tr("found")
 
                 OptionSelector {
                     id: subCategoryOptionSelector
@@ -175,7 +175,7 @@ Column {
 
             Label{
                 anchors.verticalCenter: subCatChooserButton.verticalCenter
-                text: "* "+i18n.tr("SubCategory:")
+                text: "* "+i18n.tr("SubCategory")+":"
             }
 
             Button {
@@ -205,7 +205,7 @@ Column {
             Label {
                 id: noteLabel
                 anchors.verticalCenter: noteTextArea.verticalCenter
-                text: i18n.tr("Note:")
+                text: i18n.tr("Note")+":"
             }
 
             TextArea {
@@ -224,7 +224,7 @@ Column {
 
         Dialog {
             id: dialogue
-            title: "Confirmation"
+            title: i18n.tr("Confirmation")
             modal:true
             text:""  /* parameter passed by the caller button */
             Button {
@@ -256,7 +256,7 @@ Column {
                         PopupUtils.open(operationResultDialogue)
 
                         /* clean form */
-                        subCatChooserButton.text = "Choose...";
+                        subCatChooserButton.text = i18n.tr("Choose...");
                         amountField.text="";
                         noteTextArea.text="";
                         expenseDateButton.text = Qt.formatDateTime(new Date(), "dd MMMM yyyy");
@@ -284,9 +284,9 @@ Column {
             onClicked: {
                 var amountIsValid = Utility.checkinputText(amountField.text);
 
-                if(amountIsValid && subCatChooserButton.text !== "Choose...")
+                if(amountIsValid && subCatChooserButton.text !== i18n.tr("Choose..."))
                    /* open a parameterized poup, with the title in argument  */
-                   PopupUtils.open(confirmInsertDialog,insertButton,{text: i18n.tr("Confirm the insertion ?")})
+                   PopupUtils.open(confirmInsertDialog,insertButton,{text: i18n.tr("Confirm the insertion")+" ?"})
                 else
                    PopupUtils.open(operationFailureDialogue)
             }
@@ -316,7 +316,7 @@ Column {
         /* Show the statistics page for the category expense */
         Button {
             id: statisticsButton
-            text: "Statistics"
+            text: i18n.tr("Statistics")
             width: units.gu(10)
             color: UbuntuColors.orange
             onClicked: adaptivePageLayout.addPageToNextColumn(categoryExpensePage, statisticsPage,
@@ -364,4 +364,3 @@ Column {
     }
 
 }
-

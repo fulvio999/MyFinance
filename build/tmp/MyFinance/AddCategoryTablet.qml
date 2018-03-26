@@ -36,7 +36,7 @@ Column {
     /* A PopUp that display the operation result */
     Component {
         id: subcategoryAddedInListSuccessDialogue
-        OperationSuccessResult{msg:"SubCategory added in list"}
+        OperationSuccessResult{msg:i18n.tr("SubCategory added in list")}
     }
 
     Component {
@@ -74,7 +74,7 @@ Column {
         Label {
             id: newCategoryLabel
             anchors.verticalCenter: newCategoryField.verticalCenter
-            text: "* "+i18n.tr("Category Name:")
+            text: "* "+i18n.tr("Category Name")+":"
         }
 
         TextField {
@@ -93,7 +93,7 @@ Column {
             Label {
                 id: newSubCategoryLabel
                 anchors.verticalCenter: newSubCategoryField.verticalCenter
-                text: "* "+i18n.tr("Add Subcategory:")
+                text: "* "+i18n.tr("Add Subcategory")+":"
             }
 
             TextField {
@@ -145,7 +145,7 @@ Column {
           Label{
               id: curSubCategoryListLabel
               anchors.verticalCenter: subCategoryChooserButton.verticalCenter
-              text: i18n.tr("Subcategory List:")
+              text: i18n.tr("Subcategory List")+":"
           }
 
           //----------- Sub Category selector PopUp --------------
@@ -288,7 +288,7 @@ Column {
         Dialog {
             id: confirmDialogue
             title: i18n.tr("Confirmation")
-            text: i18n.tr("Save Category ?")
+            text: i18n.tr("Save Category")+"?"
 
             Button {
                 text: i18n.tr("Cancel")

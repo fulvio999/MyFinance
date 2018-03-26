@@ -38,7 +38,7 @@ import "storage.js" as Storage
                 id: confirmDeleteExpense
                 title: i18n.tr("Confirmation")
                 modal:true
-                text: i18n.tr("Delete selected Expsense ?")
+                text: i18n.tr("Delete selected Expsense")+" ?"
 
                 Label{
                     id: deleteSuccessLabel
@@ -119,27 +119,27 @@ import "storage.js" as Storage
                 spacing: units.gu(0.2)
 
                 Label {
-                    text: "<b>"+i18n.tr("Amount:")+ "</b>"+ amount + " "+findExpensePage.currency
+                    text: "<b>"+i18n.tr("Amount")+ ": </b>"+ amount + " "+findExpensePage.currency
                     fontSize: "medium"
                 }
 
                 Label {
-                    text: "<b>Date (yyyy-mm-dd): </b>"+date
+                    text: "<b>"+i18n.tr("Date")+ "(yyyy-mm-dd): </b>"+date
                     fontSize: "medium"
                 }
 
                 Label {
-                    text: "<b>Note: </b>"+note
+                    text: "<b>"+i18n.tr("Note")+": </b>"+note
                     fontSize: "medium"
                 }
 
                 Label {
-                    text: "<b>"+i18n.tr("Category: ")+"</b>"+cat_name
+                    text: "<b>"+i18n.tr("Category")+": </b>"+cat_name
                     fontSize: "medium"
                 }
 
                 Label {
-                    text: "<b>"+i18n.tr("SubCategory: ")+"</b>"+ sub_cat_name
+                    text: "<b>"+i18n.tr("SubCategory")+": </b>"+ sub_cat_name
                     fontSize: "medium"
                 }
             }

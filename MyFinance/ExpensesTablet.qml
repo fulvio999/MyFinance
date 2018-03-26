@@ -31,7 +31,7 @@ Column {
         color: "transparent"
         width: parent.width
         height: units.gu(6)
-    }   
+    }
 
     Component {
         id: operationFailureDialogue
@@ -51,7 +51,7 @@ Column {
         Label {
             id: amountLabel
             anchors.verticalCenter: amountField.verticalCenter
-            text: "* "+i18n.tr("Amount:")
+            text: "* "+i18n.tr("Amount")+":"
         }
 
         TextField {
@@ -72,7 +72,7 @@ Column {
         Label {
             id: expenseDateLabel
             anchors.verticalCenter: expenseDateButton.verticalCenter
-            text: i18n.tr("Date:")
+            text: i18n.tr("Date")+":"
         }
 
         /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -122,7 +122,7 @@ Column {
 
             Dialog {
                 id: subCategoryPickerDialog
-                title: i18n.tr("SubCategory: ")+modelListSubCategory.count +i18n.tr(" found")
+                title: i18n.tr("SubCategory")+": "+modelListSubCategory.count +" "+i18n.tr("found")
 
                 OptionSelector {
                     id: subCategoryOptionSelector
@@ -167,8 +167,8 @@ Column {
 
         Label{
             anchors.verticalCenter: subCatChooserButton.verticalCenter
-            text: "* "+i18n.tr("Sub Category:")
-        }       
+            text: "* "+i18n.tr("Sub Category")+":"
+        }
 
 
         Button {
@@ -191,13 +191,13 @@ Column {
     }
 
     Row{
-        id: noteRow        
+        id: noteRow
         spacing: units.gu(6)
 
         Label {
             id: noteLabel
             anchors.verticalCenter: noteTextArea.verticalCenter
-            text: i18n.tr("Note:")
+            text: i18n.tr("Note")+":"
         }
 
         TextArea {
@@ -206,7 +206,7 @@ Column {
             text: ""
             height: units.gu(15)
             width: amountRow.width - units.gu(10)
-            readOnly: false            
+            readOnly: false
         }
     }
 
@@ -248,7 +248,7 @@ Column {
                         PopupUtils.open(operationResultDialogue)
 
                         /* clean form */
-                        subCatChooserButton.text = "Choose...";
+                        subCatChooserButton.text = i18n.tr("Choose...");
                         amountField.text="";
                         noteTextArea.text="";
                         expenseDateButton.text = Qt.formatDateTime(new Date(), "dd MMMM yyyy");
@@ -276,9 +276,9 @@ Column {
             onClicked: {
                 var amountIsValid = Utility.checkinputText(amountField.text);
 
-                if(amountIsValid && subCatChooserButton.text !== "Choose...")
+                if(amountIsValid && subCatChooserButton.text !== i18n.tr("Choose...") )
                    /* open a parameterized poup, with the title in argument  */
-                   PopupUtils.open(confirmInsertDialog,insertButton,{text: i18n.tr("Confirm the insertion ?")})
+                   PopupUtils.open(confirmInsertDialog,insertButton,{text: i18n.tr("Confirm the insertion")+" ?"})
                 else
                    PopupUtils.open(operationFailureDialogue)
             }
@@ -359,4 +359,3 @@ Column {
     }
 
 }
-

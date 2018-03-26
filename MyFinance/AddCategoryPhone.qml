@@ -73,7 +73,7 @@ Column {
         Label {
             id: newCategoryLabel
             anchors.verticalCenter: newCategoryField.verticalCenter
-            text: "* "+i18n.tr("Category Name:")
+            text: "* "+i18n.tr("Category Name")+":"
         }
 
         TextField {
@@ -92,7 +92,7 @@ Column {
             Label {
                 id: newSubCategoryLabel
                 anchors.verticalCenter: newSubCategoryField.verticalCenter
-                text: "* "+i18n.tr("Add Subcategory:")
+                text: "* "+i18n.tr("Add Subcategory")+":"
             }
 
             TextField {
@@ -148,7 +148,7 @@ Column {
           Label{
               id: curSubCategoryListLabel
               anchors.verticalCenter: subCategoryChooserButton.verticalCenter
-              text: i18n.tr("Subcategory List:")
+              text: i18n.tr("Subcategory List")+":"
           }
 
           //----------- Sub Category selector PopUp --------------
@@ -158,7 +158,7 @@ Column {
                Dialog {
 
                    id: subCategoryPickerDialog
-                   text: "Select the subcategory to remove"
+                   text: i18n.tr("Select the subcategory to remove")
                    title: "Subcategories: "+categoryListModelToSave.count
 
                    OptionSelector {
@@ -293,15 +293,15 @@ Column {
          Dialog {
             id: confirmDialogue
             title: "Confirmation"
-            text: i18n.tr("Save Category ?")
+            text: i18n.tr("Save Category")+"?"
 
             Button {
-                text: "Cancel"
+                text: i18n.tr("Cancel")
                 onClicked: PopupUtils.close(confirmDialogue)
             }
 
             Button {
-                text: "Save"
+                text: i18n.tr("Save")
                 onClicked: {
                     PopupUtils.close(confirmDialogue)
 

@@ -26,7 +26,7 @@ Row{
     Label {
         id: expenseDateFromLabel
         anchors.verticalCenter: expenseDateFromButton.verticalCenter
-        text: i18n.tr("Date from:")
+        text: i18n.tr("Date from")+":"
     }
 
     /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -66,7 +66,7 @@ Row{
     Label {
         id: expenseDateToLabel
         anchors.verticalCenter: expenseDateToButton.verticalCenter
-        text: i18n.tr("Date To:")
+        text: i18n.tr("Date To")+":"
     }
 
     /* Create a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -174,7 +174,7 @@ Row{
 
     Button {
         id: categoryChooserButton
-        text: "Choose a Category..."
+        text: i18n.tr("Choose a Category...")
         width: units.gu(20)
         onClicked: {
 
@@ -186,7 +186,7 @@ Row{
                 reportCategoryListModel.append(subCat.rows.item(i));
             }
             /* at runtime appned a new entry not present in the database */
-            reportCategoryListModel.insert(0,{"cat_name": "ALL Category"});
+            reportCategoryListModel.insert(0,{"cat_name": i18n.tr("ALL Category")});
 
             PopupUtils.open(popoverCategoryPickerComponent, categoryChooserButton)
         }
@@ -195,7 +195,7 @@ Row{
 
     Button {
         id: reportTypeChooserButton
-        text: "Report Type..."
+        text: i18n.tr("Report Type...")
         width: units.gu(20)
         onClicked: {
            PopupUtils.open(popoverReportPickerComponent, reportTypeChooserButton)
@@ -204,7 +204,7 @@ Row{
 
     Button {
         id: generateReportButton
-        text: "Generate"
+        text: i18n.tr("Generate")
         color: UbuntuColors.orange
         onClicked: {
 //                loadingPageActivity.running = true
@@ -217,4 +217,3 @@ Row{
 
 
 }
-

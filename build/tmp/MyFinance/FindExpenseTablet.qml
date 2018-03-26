@@ -48,7 +48,7 @@ Column{
         Label {
             id: expenseDateFromLabel
             anchors.verticalCenter: expenseDateFromButton.verticalCenter
-            text: i18n.tr("Date from:")
+            text: i18n.tr("Date from")+":"
         }
 
         /*
@@ -89,7 +89,7 @@ Column{
         Label {
             id: expenseDateToLabel
             anchors.verticalCenter: expenseDateToButton.verticalCenter
-            text: i18n.tr("Date To:")
+            text: i18n.tr("Date To")+":"
         }
 
         /* a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
@@ -137,7 +137,7 @@ Column{
 
              Dialog {
                  id: subCategoryPickerDialog
-                 title: i18n.tr("SubCategory: "+modelListSubCategory.count +" found")
+                 title: i18n.tr("SubCategory")+": "+modelListSubCategory.count +" "+i18n.tr("found")
 
                  OptionSelector {
                      id: subCategoryOptionSelector
@@ -176,7 +176,7 @@ Column{
 
          Label{
              anchors.verticalCenter: subCatChooserButton.verticalCenter
-             text: i18n.tr("Filter:")
+             text: i18n.tr("Filter")+":"
          }
 
 
@@ -199,17 +199,17 @@ Column{
 
                  PopupUtils.open(popoverSubCategoryPickerComponent, subCatChooserButton)
              }
-         }     
+         }
 
          Button {
             id: searchExpenseButton
-            text: "Search/Reload"
+            text: i18n.tr("Search/Reload")
             color: UbuntuColors.orange
             onClicked: {
 
                 //console.log("Searching expense with SubCategory Filter: "+ subCatChooserButton.text);
 
-                if(subCatChooserButton.text != "All SubCategory")
+                if(subCatChooserButton.text != i18n.tr("All SubCategory"))
                     Storage.searchExpense(expenseDateFromButton.text,expenseDateToButton.text,categoryExpensePage.id, subCatChooserButton.text );
                 else
                     Storage.searchExpense(expenseDateFromButton.text,expenseDateToButton.text,categoryExpensePage.id, -1 );

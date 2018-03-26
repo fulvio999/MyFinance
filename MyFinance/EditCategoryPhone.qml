@@ -51,7 +51,7 @@ Column {
         Label {
             id: newCategoryLabel
             anchors.verticalCenter: newCategoryField.verticalCenter
-            text: i18n.tr("Category Name:")
+            text: i18n.tr("Category Name")+":"
         }
 
         TextField {
@@ -70,7 +70,7 @@ Column {
             Label {
                 id: newSubCategoryLabel
                 anchors.verticalCenter: newSubCategoryField.verticalCenter
-                text: i18n.tr("Add Subcategory:")
+                text: i18n.tr("Add Subcategory")+":"
             }
 
             TextField {
@@ -106,7 +106,7 @@ Column {
 
                         //old: if(categoryListModelToSave.count !== categoryListModelSaved.count)
                         if(headerLabel.text.indexOf("Modified") === -1) {
-                           headerLabel.text = headerLabel.text +" (Modified - NOT Saved)"
+                           headerLabel.text = headerLabel.text +" "+i18n.tr("(Modified - NOT Saved)")
                         }
 
                         newSubCategoryField.text =""
@@ -125,7 +125,7 @@ Column {
           Label{
               id: curSubCategoryListLabel
               anchors.verticalCenter: subCategoryChooserButton.verticalCenter
-              text: i18n.tr("Subcategory:")
+              text: i18n.tr("Subcategory")+":"
           }
 
           //----------- Sub Category selector PopUp --------------
@@ -135,7 +135,7 @@ Column {
                Dialog {
 
                    id: subCategoryPickerDialog
-                   text: "Select the subcategory to remove"
+                   text: i18n.tr("Select the subcategory to remove")
 
                    OptionSelector {
                        id: subCategoryOptionSelector
@@ -147,7 +147,7 @@ Column {
 
                    Component.onCompleted: {
 
-                       subCategoryPickerDialog.title = "Subcategories: "+categoryListModelToSave.count
+                       subCategoryPickerDialog.title = i18n.tr("Subcategories")+": "+categoryListModelToSave.count
 
                        /* manage popup buttons */
                        if(categoryListModelToSave.count === 0) {
@@ -179,10 +179,10 @@ Column {
 
                                /* if the label don't contains the 'Modified'suffix, add it */
                                if(headerLabel.text.indexOf("Modified") === -1) {
-                                  headerLabel.text = headerLabel.text +" (Modified - NOT Saved)"
+                                  headerLabel.text = headerLabel.text +" "+i18n.tr("(Modified - NOT Saved)")
                                }
 
-                               subCategoryPickerDialog.title = i18n.tr("Subcategories: ")+categoryListModelToSave.count
+                               subCategoryPickerDialog.title = i18n.tr("Subcategories")+": "+categoryListModelToSave.count
                            }
                        }
 
@@ -250,15 +250,15 @@ Column {
         Dialog {
             id: confirmDialogue
             title: i18n.tr("Confirmation")
-            text: i18n.tr("Save Category modifications ?")
+            text: i18n.tr("Save Category modifications")+" ?"
 
             Button {
-                text: "Cancel"
+                text: i18n.tr("Cancel")
                 onClicked: PopupUtils.close(confirmDialogue)
             }
 
             Button {
-                text: "Save"
+                text: i18n.tr("Save")
                 onClicked: {
                     PopupUtils.close(confirmDialogue)
 
@@ -325,7 +325,7 @@ Column {
            id: confirmDeleteCategory
            title: i18n.tr("Confirmation")
            modal:true
-           text:i18n.tr("Delete this Category with his subcategory and")+ "<b>"+i18n.tr("ALL")+"</b>"+i18n.tr("associated expense ?")
+           text:i18n.tr("Delete this Category with his subcategory and")+ "<b> "+i18n.tr("ALL")+"</b>" +i18n.tr("associated expense ?")
 
            Label{
                id:operationresultLabel
@@ -354,7 +354,7 @@ Column {
                    Storage.deleteAllExpenseForCategory(categoryExpensePage.id);
                    Storage.deleteCategoryReport(categoryExpensePage.id);
 
-                   operationresultLabel.text ="Operation Executed Successfully"
+                   operationresultLabel.text = i18n.tr("Operation Executed Successfully")
                    operationresultLabel.color = UbuntuColors.green
 
                    Storage.getAllCategory(); //refresh category list

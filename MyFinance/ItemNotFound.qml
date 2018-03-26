@@ -6,7 +6,7 @@ import Ubuntu.Components.Popups 1.3
 Dialog {
     id: operationResult
     title: i18n.tr("Operation Result")
-    text: i18n.tr("No People Found !")
+    text: i18n.tr("No Data Found")+" !"
     Button {
         text: "Close"
         onClicked: PopupUtils.close(operationResult)

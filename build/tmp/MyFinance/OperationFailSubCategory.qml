@@ -13,14 +13,13 @@ Dialog {
     contentWidth: units.gu(42)  /* the width of the Dialog */
 
     Label{
-        text: i18n.tr("Attention: " +msg)
+        text: i18n.tr("Attention")+": "+msg
         color: UbuntuColors.red
     }
 
     Button {
-        text: "Close"
+        text: i18n.tr("Close")
         onClicked:
             PopupUtils.close(operationFailNewSubCategoryDialog)
     }
 }
-

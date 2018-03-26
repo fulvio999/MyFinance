@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = MyFinance1.0.0
-DISTDIR = /home/fulvio/Scrivania/MyFinance/MyFinance/.tmp/MyFinance1.0.0
+DISTDIR = /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/.tmp/MyFinance1.0.0
 LINK          = g++
 LFLAGS        = -m64 -Wl,-O1
 LIBS          = $(SUBLIBS)  
@@ -385,8 +385,8 @@ compiler_clean:
 
 install_config_files: first FORCE
 	@test -d $(INSTALL_ROOT)/MyFinance || mkdir -p $(INSTALL_ROOT)/MyFinance
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/MyFinance.apparmor $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/MyFinance.png $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/MyFinance.apparmor $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/MyFinance.png $(INSTALL_ROOT)/MyFinance/
 
 uninstall_config_files: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/MyFinance/MyFinance.png
@@ -396,51 +396,51 @@ uninstall_config_files: FORCE
 
 install_qml_files: first FORCE
 	@test -d $(INSTALL_ROOT)/MyFinance || mkdir -p $(INSTALL_ROOT)/MyFinance
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/AboutProduct.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/AddCategoryPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/AddCategoryTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/AppConfigurationPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/AppConfigurationTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/CategoryListDelegate.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/DataBaseEraser.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/EditCategoryPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/EditCategoryTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/EditExpensePhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/EditExpenseTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ExpenseFoundDelegate.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ExpenseSearchResultDelegate.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ExpensesPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ExpensesTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/FindExpensePhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/FindExpenseTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/GlobalReportPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/GlobalReportTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/HelpPagePhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/HelpPageTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/HighlightComponent.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ImportDataAlreadyDone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/InvalidInputPopUp.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ItemNotFound.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/Main.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/OperationFailInsertExpense.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/OperationFailSubCategory.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/OperationStatusDialog.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/OperationSuccessResult.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/OperationSuccessResultRestart.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/QChart.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/QChartGallery.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/ReportSelectorForm.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/Settings.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/SubCategoryReportPhone.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/SubCategoryReportTablet.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/tests/unit/tst_main.qml $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/categoryUtils.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/globalReportChart.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/QChart.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/QChartGallery.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/storage.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/subCategoryReportChart.js $(INSTALL_ROOT)/MyFinance/
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/MyFinance/utility.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/AboutProduct.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/AddCategoryPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/AddCategoryTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/AppConfigurationPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/AppConfigurationTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/CategoryListDelegate.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/DataBaseEraser.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditCategoryPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditCategoryTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditExpensePhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/EditExpenseTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ExpenseFoundDelegate.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ExpenseSearchResultDelegate.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ExpensesPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ExpensesTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/FindExpensePhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/FindExpenseTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/GlobalReportPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/GlobalReportTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/HelpPagePhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/HelpPageTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/HighlightComponent.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ImportDataAlreadyDone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/InvalidInputPopUp.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ItemNotFound.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/Main.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationFailInsertExpense.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationFailSubCategory.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationStatusDialog.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResult.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/OperationSuccessResultRestart.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/QChart.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/QChartGallery.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/ReportSelectorForm.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/Settings.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/SubCategoryReportPhone.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/SubCategoryReportTablet.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/tests/unit/tst_main.qml $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/categoryUtils.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/globalReportChart.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/QChart.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/QChartGallery.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/storage.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/subCategoryReportChart.js $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/MyFinance/utility.js $(INSTALL_ROOT)/MyFinance/
 
 uninstall_qml_files: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/MyFinance/utility.js
@@ -493,7 +493,7 @@ uninstall_qml_files: FORCE
 
 install_desktop_file: first FORCE
 	@test -d $(INSTALL_ROOT)/MyFinance || mkdir -p $(INSTALL_ROOT)/MyFinance
-	-$(INSTALL_FILE) /home/fulvio/Scrivania/MyFinance/build/MyFinance/MyFinance.desktop $(INSTALL_ROOT)/MyFinance/
+	-$(INSTALL_FILE) /home/fulvio/Dropbox/ubuntu-devel/my-apps/MyFinance/source/MyFinance/build/MyFinance/MyFinance.desktop $(INSTALL_ROOT)/MyFinance/
 
 uninstall_desktop_file: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/MyFinance/MyFinance.desktop
