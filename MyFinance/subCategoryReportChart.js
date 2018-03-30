@@ -48,7 +48,7 @@
         var expenses = [];
         for(var i =0;i < rs.rows.length;i++) {
             expenses.push(rs.rows.item(i).current_amount);
-            //console.log('current_amount: '+rs.rows.item(i).current_amount);
+            //console.log('current_amount: '+parseFloat(rs.rows.item(i).current_amount).toFixed(3) );
         }
 
         /* There is Chart library bug: chart not drawed if there is only one bar. workaround: ad a fake bar with zero value */
@@ -97,8 +97,8 @@
            var rs = tx.executeSql('select sub_cat_name, current_amount from sub_category c left join subcategory_report_current r where r.id_sub_category = c.id and c.id_category=?;', [idCategory]);
 
                for(var i =0;i < rs.rows.length;i++){
-                   instantReportTableListModel.append(rs.rows.item(i));
-                   //console.log("sub_cat_name:"+rs.rows.item(i).sub_cat_name+ " amount: "+rs.rows.item(i).current_amount);
+                  instantReportTableListModel.append({ "sub_cat_name" : rs.rows.item(i).sub_cat_name,  "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
+                  //console.log("sub_cat_name:"+rs.rows.item(i).sub_cat_name+ " amount: "+rs.rows.item(i).current_amount);
                }
             }
           );
@@ -143,7 +143,7 @@
                 ]
             }
 
-            return ChartBarData;     
+            return ChartBarData;
     }
 
 
@@ -155,7 +155,7 @@
          var db = getDatabase();
          var rs = "";
 
-         db.transaction(function(tx) { 
+         db.transaction(function(tx) {
              /* note:the 'in' clusole is necessary to don't load the subcategory with NO expense in the range. Otherwise X and Y dataset have different size */
              rs = tx.executeSql("select sub_cat_name,id from sub_category where id_category='"+idCategory+"' and id in (select e.id_subcategory from expense e where date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') and id_category='"+idCategory+"' group by id_subcategory)");
             }
@@ -180,7 +180,7 @@
 
         var db = getDatabase();
         var rs = "";
-           db.transaction(function(tx) {    
+           db.transaction(function(tx) {
                rs = tx.executeSql("select sum(amount) as totalMonthlyAmount from expense e where date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') and id_category='"+idCategory+"' group by id_subcategory");
             }
           );
@@ -205,11 +205,11 @@
 
                var rs = tx.executeSql("select a.current_amount, c.sub_cat_name from (select id_subcategory, sum(amount) as current_amount from expense e where date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') and e.id_category='"+idCategory+"' group by e.id_subcategory) a left join sub_category c where a.id_subcategory = c.id");
                for(var i =0;i < rs.rows.length;i++){
-                   lastMonthChartListModel.append(rs.rows.item(i));
+                   //lastMonthChartListModel.append(rs.rows.item(i));
+                   lastMonthChartListModel.append({ "sub_cat_name" : rs.rows.item(i).sub_cat_name,  "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
                    //console.log("Found amount: "+rs.rows.item(i).current_amount + " for SubCategory: "+rs.rows.item(i).sub_cat_name);
                }
-
-            }
+             }
           );
     }
 
@@ -255,7 +255,7 @@
                 ]
            }
 
-           return ChartBarData;      
+           return ChartBarData;
     }
 
 
@@ -319,7 +319,8 @@
 
                var rs = tx.executeSql("select a.current_amount, c.sub_cat_name from (select id_subcategory, sum(amount) as current_amount from expense e where  date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') and id_category="+idCategory+" group by id_subcategory) a left join sub_category c where a.id_subcategory = c.id");
                for(var i =0;i < rs.rows.length;i++){
-                   customRangeChartListModel.append(rs.rows.item(i));
+                   //customRangeChartListModel.append(rs.rows.item(i));
+                   customRangeChartListModel.append({ "sub_cat_name" : rs.rows.item(i).sub_cat_name,  "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
                }
             }
           );

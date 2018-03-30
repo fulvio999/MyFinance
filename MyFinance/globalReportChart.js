@@ -88,7 +88,8 @@
            db.transaction(function(tx) {
              var rs = tx.executeSql('select cat_name, current_amount from category c left join category_report_current r where r.id_category = c.id');
                for(var i =0;i < rs.rows.length;i++){
-                   instantReportTableListModel.append(rs.rows.item(i));
+                   //instantReportTableListModel.append(rs.rows.item(i));
+                   instantReportTableListModel.append({ "cat_name" : rs.rows.item(i).cat_name,  "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
                }
             }
           );
@@ -123,7 +124,7 @@
                 ]
             }
 
-            return ChartBarData;     
+            return ChartBarData;
     }
 
 
@@ -178,7 +179,8 @@
 
                var rs = tx.executeSql("select a.current_amount , c.cat_name from (select id_category, sum(amount) as current_amount from expense e where  date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') group by id_category) a left join category c where a.id_category = c.id");
                for(var i =0;i < rs.rows.length;i++){
-                   lastMonthChartListModel.append(rs.rows.item(i));
+                   //lastMonthChartListModel.append(rs.rows.item(i));
+                   lastMonthChartListModel.append({ "cat_name" : rs.rows.item(i).cat_name, "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
                }
             }
           );
@@ -211,7 +213,7 @@
                 ]
            }
 
-           return ChartBarData;      
+           return ChartBarData;
     }
 
 
@@ -274,11 +276,9 @@
 
                var rs = tx.executeSql("select a.current_amount, c.cat_name from (select id_category, sum(amount) as current_amount from expense e where date(e.date) <= date('"+dateTo+"') and date(e.date) >= date('"+dateFrom+"') group by id_category) a left join category c where a.id_category = c.id");
                for(var i =0;i < rs.rows.length;i++){
-                   customRangeChartListModel.append(rs.rows.item(i));
-                   //console.log('Category name: '+rs.rows.item(i).cat_name+ " have amount: "+rs.rows.item(i).current_amount);
+                   //customRangeChartListModel.append(rs.rows.item(i));
+                   customRangeChartListModel.append({ "cat_name" : rs.rows.item(i).cat_name, "current_amount": parseFloat(rs.rows.item(i).current_amount).toFixed(3)} );
                }
             }
           );
     }
-
-
