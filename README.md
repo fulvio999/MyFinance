@@ -5,3 +5,8 @@ User can customize category and Subcategory adding and editing them according to
 (Note: due to bad quality i am refactoring the code. If you have trouble to understand it, notify me).
 
 Available on OpenStore: https://open.uappexplorer.com/app/myfinance.fulvio
+
+V. 1.1
+- Fix for too many decimal digits in chart legend
+- added missing i18n statements in qml files
+- Spanish transaltion (thanks Advocatux)
