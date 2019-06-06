@@ -13,7 +13,7 @@ Dialog {
         text: "<b>"+ i18n.tr("Remove ALL Expenses and Category")+" ?"+"<br/>"+i18n.tr("(there is no restore)")+"</b>"
 
         Row{
-              anchors.horizontalCenter: parent.horizontalCenter
+              x: dataBaseEraserDialog.width/10
               spacing: units.gu(1)
 
               Button {
