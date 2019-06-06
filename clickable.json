@@ -1,4 +1,4 @@
 {
-"template": "pure-qml-qmake",
-"kill": "qmlscene"
+  "template": "pure-qml-cmake",
+  "kill": "qmlscene"
 }
