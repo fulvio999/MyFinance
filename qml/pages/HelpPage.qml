@@ -25,7 +25,7 @@ Page {
 
              ConditionalLayout {
                  name: "helpPageLayout"
-                 when: root.width > units.gu(80)
+                 when: root.width > units.gu(120)
                      HelpPageTablet{}
              }
          ]

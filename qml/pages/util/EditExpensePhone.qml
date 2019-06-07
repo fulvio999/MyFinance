@@ -41,11 +41,6 @@ Column {
         OperationSuccessResult{msg:i18n.tr("Operation executed successfully")}
     }
 
-    Component {
-        id: operationNotAllowedDialogue
-        OperationNotAllowed{}
-    }
-
     Row{
         id: amountRow
         spacing: units.gu(6)

@@ -47,7 +47,7 @@ Page {
 
                 ConditionalLayout {
                     name: "addContactLayout"
-                    when: root.width > units.gu(80) // && Screen.orientation === Qt.LandscapeOrientation
+                    when: root.width > units.gu(120) // && Screen.orientation === Qt.LandscapeOrientation
                     AddCategoryTablet{}
                 }
             ]

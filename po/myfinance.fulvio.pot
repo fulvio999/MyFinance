@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myfinance.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-06 15:47+0000\n"
+"POT-Creation-Date: 2019-06-07 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,20 +120,6 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: ../qml/dialogs/OperationNotAllowed.qml:12
-msgid "Operation not allowed"
-msgstr ""
-
-#: ../qml/dialogs/OperationNotAllowed.qml:21
-msgid ""
-"Is not possible move an expense to a different SubCategory AND change his "
-"amount at the same time."
-msgstr ""
-
-#: ../qml/dialogs/OperationNotAllowed.qml:22
-msgid "Change the SubCategory and after edit the expense amount"
-msgstr ""
-
 #: ../qml/dialogs/OperationStatusDialog.qml:19
 msgid "Informations"
 msgstr ""
@@ -208,7 +194,7 @@ msgstr ""
 #: ../qml/pages/util/AddCategoryTablet.qml:294
 #: ../qml/pages/util/EditCategoryTablet.qml:252
 #: ../qml/pages/util/EditCategoryTablet.qml:327
-#: ../qml/pages/util/EditExpensePhone.qml:164
+#: ../qml/pages/util/EditExpensePhone.qml:159
 #: ../qml/pages/util/EditCategoryPhone.qml:256
 #: ../qml/pages/util/EditCategoryPhone.qml:330
 #: ../qml/pages/util/EditExpenseTablet.qml:151
@@ -224,7 +210,7 @@ msgstr ""
 #: ../qml/pages/util/AppConfigurationPhone.qml:64
 #: ../qml/pages/util/ExpensesPhone.qml:235
 #: ../qml/pages/util/AddCategoryTablet.qml:298
-#: ../qml/pages/util/EditExpensePhone.qml:168
+#: ../qml/pages/util/EditExpensePhone.qml:163
 #: ../qml/pages/util/EditCategoryPhone.qml:260
 #: ../qml/pages/util/EditExpenseTablet.qml:155
 #: ../qml/pages/util/ExpensesTablet.qml:228
@@ -236,7 +222,7 @@ msgstr ""
 #: ../qml/pages/util/AppConfigurationPhone.qml:70
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:59
 #: ../qml/pages/util/ExpensesPhone.qml:240
-#: ../qml/pages/util/EditExpensePhone.qml:173
+#: ../qml/pages/util/EditExpensePhone.qml:168
 #: ../qml/pages/util/EditExpenseTablet.qml:160
 #: ../qml/pages/util/ExpensesTablet.qml:233
 #: ../qml/pages/util/AppConfigurationTablet.qml:70
@@ -262,7 +248,7 @@ msgid "Currency (ISO format)"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:125
-#: ../qml/pages/util/EditExpensePhone.qml:223
+#: ../qml/pages/util/EditExpensePhone.qml:218
 #: ../qml/pages/util/EditExpenseTablet.qml:212
 #: ../qml/pages/util/AppConfigurationTablet.qml:124
 msgid "Update"
@@ -344,7 +330,7 @@ msgid "OK: Done, Reload the expense List"
 msgstr ""
 
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:123
-#: ../qml/pages/util/EditExpensePhone.qml:57
+#: ../qml/pages/util/EditExpensePhone.qml:52
 #: ../qml/pages/util/EditExpenseTablet.qml:52
 #: ../qml/pages/util/ExpensesTablet.qml:59
 msgid "Amount"
@@ -352,7 +338,7 @@ msgstr ""
 
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:128
 #: ../qml/pages/util/ExpensesPhone.qml:85
-#: ../qml/pages/util/EditExpensePhone.qml:83
+#: ../qml/pages/util/EditExpensePhone.qml:78
 #: ../qml/pages/util/EditExpenseTablet.qml:74
 #: ../qml/pages/util/ExpensesTablet.qml:80
 msgid "Date"
@@ -360,7 +346,7 @@ msgstr ""
 
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:133
 #: ../qml/pages/util/ExpensesPhone.qml:212
-#: ../qml/pages/util/EditExpensePhone.qml:144
+#: ../qml/pages/util/EditExpensePhone.qml:139
 #: ../qml/pages/util/EditExpenseTablet.qml:131
 #: ../qml/pages/util/ExpensesTablet.qml:205
 msgid "Note"
@@ -370,7 +356,7 @@ msgstr ""
 #: ../qml/pages/util/FindExpenseTablet.qml:143
 #: ../qml/pages/util/ExpensesPhone.qml:135
 #: ../qml/pages/util/ExpensesPhone.qml:182
-#: ../qml/pages/util/EditExpensePhone.qml:128
+#: ../qml/pages/util/EditExpensePhone.qml:123
 #: ../qml/pages/util/ExpensesTablet.qml:130
 #: ../qml/pages/util/FindExpensePhone.qml:162
 msgid "SubCategory"
@@ -733,7 +719,7 @@ msgstr ""
 msgid "Operation Executed Successfully"
 msgstr ""
 
-#: ../qml/pages/util/EditExpensePhone.qml:227
+#: ../qml/pages/util/EditExpensePhone.qml:222
 #: ../qml/pages/util/EditExpenseTablet.qml:216
 msgid "Confirm the modifications"
 msgstr ""
