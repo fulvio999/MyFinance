@@ -25,7 +25,7 @@ Dialog {
               Button {
                     id: importButton
                     text: i18n.tr("Delete")
-                    color: UbuntuColors.orange
+                    color: UbuntuColors.red
                     onClicked: {
                           loadingPageActivity.running = true
                           Storage.cleanAllDatabase();
@@ -34,8 +34,8 @@ Dialog {
                           closeButton.enabled = true
 
                           /* blank settings flag that notify default data already imported.
-                               So that the user can import them again with the option in
-                               the configuration page.
+                             So that the user can import them again with the option in
+                             the configuration page.
                           */
                           settings.defaultDataAlreadyImported = false
 
@@ -49,9 +49,9 @@ Dialog {
           }
 
           Row{
-            anchors.horizontalCenter: parent.horizontalCenter
-                Label{
-                    id: deleteOperationResult
-                }
+             anchors.horizontalCenter: parent.horizontalCenter
+             Label{
+                  id: deleteOperationResult
+             }
           }
     }

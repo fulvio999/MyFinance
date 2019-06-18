@@ -8,7 +8,6 @@ import Ubuntu.Layouts 1.0
 import QtQuick.LocalStorage 2.0
 import Ubuntu.Components.ListItems 1.3 as ListItem
 
-
 import "../../js/categoryUtils.js" as CategoryUtils
 import "../../js/utility.js" as Utility
 import "../../js/storage.js" as Storage
@@ -17,10 +16,7 @@ import "../../js/storage.js" as Storage
 import "../../dialogs"
 
 /*
- Used in Main.qml to show the details of a selectd Person/contact in the contacts List. Used for Tablet
-
- NOTE: All the TextField have set 'hasClearButton: false'. If 'hasClearButton: true' is shown a clear button
- in the field, and when is used there are refresh problem of the TextField when another person is chosen in the list
+  Edit Categry Page Content used for Tablet devices
 */
 Column {
 
@@ -95,15 +91,13 @@ Column {
                 onClicked: {
 
                     var result = CategoryUtils.checkAndAddSubCategory(newSubCategoryField.text)
+
                     if(result){
                         PopupUtils.open(operationSuccessDialogue)
-
-                        //old: if(categoryListModelToSave.count !== categoryListModelSaved.count)
-                        if(headerLabel.text.indexOf("Modified") === -1) {
-                           headerLabel.text = headerLabel.text +" "+i18n.tr("(Modified - NOT Saved)")
-                        }
-
                         newSubCategoryField.text =""
+                        categoryModified = true;
+                        rememberToSaveLabel.visible = true
+
                     }else {
                         PopupUtils.open(operationFailureDialogue)
                     }
@@ -151,6 +145,12 @@ Column {
                        }
                    }
 
+                   Component.onDestruction: {
+                       if(categoryModified) {
+                          rememberToSaveLabel.visible = true
+                       }
+                   }
+
                    //-------- Command buttons ------------
                    Row{
                        id: removeSubCategoryRow
@@ -160,9 +160,12 @@ Column {
                            id: removeItemButton
                            objectName: "removeItem"
                            text: i18n.tr("Remove")
+                           color: UbuntuColors.red
                            width: units.gu(14)
                            onClicked: {
                                CategoryUtils.removeSubCategory(subCategoryOptionSelector)
+
+                               rememberToSaveLabel.visible = true
 
                                /* manage popup buttons */
                                if(categoryListModelToSave.count === 0) {
@@ -225,7 +228,6 @@ Column {
             objectName: "Save"
             text: i18n.tr("Save")
             width: units.gu(14)
-            color: UbuntuColors.orange
             onClicked: {
                 PopupUtils.open(confirmEditingCategory)
             }
@@ -236,12 +238,23 @@ Column {
             id: deleteCategoryButton
             objectName: "Delete"
             text: i18n.tr("Delete Category")
+            color: UbuntuColors.red
             width: units.gu(20)
             onClicked: {
                 PopupUtils.open(confirmDeleteCategoryDialogue)
             }
-        }
-    }
+         }
+      }
+
+      Row{
+          anchors.horizontalCenter: parent.horizontalCenter
+          Label{
+              id: rememberToSaveLabel
+              text: i18n.tr("At the modifications end, press Save button")
+              font.bold : true
+              visible: false
+          }
+     }
 
     //-------------- Confirm Editing Categry and associated Subcategory ----------
     Component {
@@ -253,12 +266,12 @@ Column {
             text: i18n.tr("Save Category modifications")+" ?"
 
             Button {
-                text: "Cancel"
+                text: i18n.tr("Cancel")
                 onClicked: PopupUtils.close(confirmDialogue)
             }
 
             Button {
-                text: "Save"
+                text: i18n.tr("Save")
                 onClicked: {
                     PopupUtils.close(confirmDialogue)
 
@@ -287,7 +300,6 @@ Column {
                            Storage.deleteSubCategoryReport(subCategoryId);
 
                            var totalSubCategoryExpense = Storage.getExpsenseAmountForSubCategory(subCategoryId);
-                           //console.log("Total SubCategory Expense amount: "+totalSubCategoryExpense);
 
                            Storage.deleteAllExpenseForSubCategory(subCategoryId);
 
@@ -295,10 +307,9 @@ Column {
                            var diffAmount = -1 * totalSubCategoryExpense;
 
                            /* update current report table removing the subcategry expenses */
-                           //if(diffAmount != 0){
-                              Storage.updateCategoryReportCurrentAmount(editExpensePage.categoryId, diffAmount);
-                              Storage.updateSubCategoryReportCurrentAmount(subCategoryId, diffAmount);
-                           //}
+                           if(diffAmount != 0){
+                              Storage.updateCategoryReportCurrentAmount(categoryEditPage.categoryId, diffAmount);
+                           }
 
                            /* the ListModel to save contains a category non present in the saved one */
                            Storage.deleteSubCategory(categoryListModelSaved.get(i).sub_cat_name,categoryEditPage.categoryId);
@@ -308,8 +319,10 @@ Column {
                      /* update the subcategory list shown in the popup  */
                      CategoryUtils.initCategoryListModelToSave(categoryEditPage.categoryId);
 
-                     /* remove "Modified" suffix */
-                     //headerLabel.text = "<b>"+ i18n.tr("Edit chosen category") +"</b>"
+                     /* save done, hide label */
+                     rememberToSaveLabel.visible = false
+                     categoryModified = false;
+
                      Storage.getAllCategory(); // to refresh amount shown in category List
                      PopupUtils.open(operationSuccessDialogue)
                 }
@@ -341,6 +354,7 @@ Column {
            Button {
                id:deleteButton
                text: i18n.tr("Delete")
+               color: UbuntuColors.red
                onClicked: {
 
                    /* remove ALL data about the CATEGORY: reports, expense, subcategory */

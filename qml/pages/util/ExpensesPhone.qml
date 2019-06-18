@@ -12,7 +12,6 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import "../../js/utility.js" as Utility
 import "../../js/storage.js" as Storage
 
-
 /* import folder */
 import "../../dialogs"
 

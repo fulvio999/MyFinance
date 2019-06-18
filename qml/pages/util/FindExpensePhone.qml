@@ -16,6 +16,9 @@ import "../../js/storage.js" as Storage
 /* import folder */
 import "../../dialogs"
 
+/*
+  Content of the search expenses Page. This content is used for phone devices
+*/
 Column{
      id: searchExpenseColum
      anchors.fill: parent
@@ -33,17 +36,13 @@ Column{
          OperationSuccessResult{}
      }
 
-//    Component.onCompleted: {
-//         searchExpenseButton.clicked.connect(send)
-//    }
-
-    /* placeholder: required to place the content under the header */
-    Rectangle {
+     /* placeholder: required to place the content under the header */
+     Rectangle {
         /* to get the background color of the curreunt theme. Necessary if default theme is not used */
         color: theme.palette.normal.background
         width: parent.width
         height: units.gu(5)
-    }
+     }
 
     /* display search result message */
     Row{

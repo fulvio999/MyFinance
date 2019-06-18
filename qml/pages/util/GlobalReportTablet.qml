@@ -15,8 +15,11 @@ import "../../js/globalReportChart.js" as GlobalReportChart
 import "../../js/QChart.js" as Charts
 import "../../js/QChartGallery.js" as ChartsData
 
-/* Show the global reports: the ones abaout ALL the category */
 
+/*
+  Content of the global reports Page. Global reports are the ones about ALL the category
+  This is the content for Phone devices
+ */
 Column{
     id: globalReportPageColumn
     anchors.fill: parent

@@ -56,7 +56,8 @@ Component {
 
                 Button {
                     id:executeButton
-                    text: i18n.tr("Execute")
+                    text: i18n.tr("Delete")
+                    color: UbuntuColors.red
 
                     //signal send()
                     //onSend: console.log("Send clicked")

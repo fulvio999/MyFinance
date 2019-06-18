@@ -18,8 +18,9 @@ import "../dialogs"
 import "./util"
 
 
-
-//----------------- Global Report Page -----------------
+/*
+  Global Report Page: show reports by Category
+*/
 Page {
      id: globalReportPage
 

@@ -76,8 +76,7 @@ Page{
 
 
 
-
-    /* A list of Category saved in the database */
+    /* A list of Category currently saved in the database */
     UbuntuListView {
         id: listView
         anchors.fill: parent
@@ -125,6 +124,7 @@ Page{
                     id: clo1
                     spacing: units.gu(1)
                     anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
 
                     /* placeholder */
                     Rectangle {

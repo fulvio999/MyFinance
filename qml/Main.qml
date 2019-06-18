@@ -34,8 +34,8 @@ MainView {
     */
     applicationName: "myfinance.fulvio"
 
-    /* to test themes others then default one */
-    theme.name: "Ubuntu.Components.Themes.SuruDark"
+    /* enable to test with dark theme */
+    //theme.name: "Ubuntu.Components.Themes.SuruDark"
 
     /* to test themes others then default one */
     //theme.name: "Ubuntu.Components.Themes.SuruDark"
@@ -50,8 +50,8 @@ MainView {
     //height: units.gu(75)
 
     //Tablet horizontal
-    //width: units.gu(128)
-    //height: units.gu(80)
+    width: units.gu(128)
+    height: units.gu(80)
 
     //Tablet vertical
     //width: units.gu(80)
@@ -59,8 +59,8 @@ MainView {
 
     /* ----- phone 4.5 (the smallest one) ---- */
     //vertical
-    width: units.gu(50)
-    height: units.gu(96)
+    //width: units.gu(50)
+    //height: units.gu(96)
 
     //horizontal
     //width: units.gu(96)
@@ -111,7 +111,7 @@ MainView {
     }
 
     /* On first use, show a popup with some base informations */
-  /*  Component {
+   /* Component {
         id: operationStatusDialog
         OperationStatusDialog{}
     }

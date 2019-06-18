@@ -16,8 +16,10 @@ import "../../js/QChart.js" as Charts
 
 import "../../dialogs"
 
-//--------------- Display statistics reports (charts) for the chosen SUB-Category -------
-
+/*
+   Content of the report Page (charts) for a chosen SUB-Category.
+   This is the content for Phone devices
+*/
 Column{
     id: reportPageColumn
     anchors.fill: parent

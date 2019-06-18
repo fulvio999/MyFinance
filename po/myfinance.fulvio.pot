@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myfinance.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-07 15:42+0000\n"
+"POT-Creation-Date: 2019-06-18 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,23 +29,23 @@ msgstr ""
 msgid "No Data Found"
 msgstr ""
 
-#: ../qml/ReportSelectorForm.qml:29 ../qml/pages/util/FindExpenseTablet.qml:54
-#: ../qml/pages/util/FindExpensePhone.qml:67
+#: ../qml/ReportSelectorForm.qml:29 ../qml/pages/util/FindExpenseTablet.qml:53
+#: ../qml/pages/util/FindExpensePhone.qml:66
 msgid "Date from"
 msgstr ""
 
-#: ../qml/ReportSelectorForm.qml:69 ../qml/pages/util/FindExpenseTablet.qml:95
-#: ../qml/pages/util/FindExpensePhone.qml:114
+#: ../qml/ReportSelectorForm.qml:69 ../qml/pages/util/FindExpenseTablet.qml:94
+#: ../qml/pages/util/FindExpensePhone.qml:113
 msgid "Date To"
 msgstr ""
 
 #: ../qml/ReportSelectorForm.qml:134 ../qml/ReportSelectorForm.qml:167
-#: ../qml/pages/util/AppConfigurationPhone.qml:377
-#: ../qml/pages/util/SubCategoryReportTablet.qml:227
-#: ../qml/pages/util/GlobalReportPhone.qml:219
-#: ../qml/pages/util/SubCategoryReportPhone.qml:220
-#: ../qml/pages/util/GlobalReportTablet.qml:227
-#: ../qml/pages/util/AppConfigurationTablet.qml:366
+#: ../qml/pages/util/AppConfigurationPhone.qml:378
+#: ../qml/pages/util/SubCategoryReportTablet.qml:229
+#: ../qml/pages/util/GlobalReportPhone.qml:223
+#: ../qml/pages/util/SubCategoryReportPhone.qml:222
+#: ../qml/pages/util/GlobalReportTablet.qml:230
+#: ../qml/pages/util/AppConfigurationTablet.qml:367
 msgid "Confirm"
 msgstr ""
 
@@ -99,24 +99,24 @@ msgstr ""
 #: ../qml/dialogs/OperationFailSubCategory.qml:21
 #: ../qml/dialogs/OperationSuccessResult.qml:19
 #: ../qml/dialogs/ImportDataAlreadyDone.qml:19 ../qml/AboutProduct.qml:13
-#: ../qml/DataBaseEraser.qml:21 ../qml/pages/util/AppConfigurationPhone.qml:387
+#: ../qml/DataBaseEraser.qml:21 ../qml/pages/util/AppConfigurationPhone.qml:388
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:53
-#: ../qml/pages/util/FindExpenseTablet.qml:169
-#: ../qml/pages/util/ExpensesPhone.qml:162
-#: ../qml/pages/util/SubCategoryReportTablet.qml:249
+#: ../qml/pages/util/FindExpenseTablet.qml:168
+#: ../qml/pages/util/ExpensesPhone.qml:161
+#: ../qml/pages/util/SubCategoryReportTablet.qml:251
 #: ../qml/pages/util/AddCategoryTablet.qml:208
-#: ../qml/pages/util/EditCategoryTablet.qml:184
-#: ../qml/pages/util/EditCategoryTablet.qml:337
+#: ../qml/pages/util/EditCategoryTablet.qml:187
+#: ../qml/pages/util/EditCategoryTablet.qml:351
 #: ../qml/pages/util/InvalidInputPopUp.qml:17
-#: ../qml/pages/util/EditCategoryPhone.qml:194
-#: ../qml/pages/util/EditCategoryPhone.qml:340
-#: ../qml/pages/util/GlobalReportPhone.qml:242
-#: ../qml/pages/util/SubCategoryReportPhone.qml:242
-#: ../qml/pages/util/ExpensesTablet.qml:157
-#: ../qml/pages/util/GlobalReportTablet.qml:250
-#: ../qml/pages/util/FindExpensePhone.qml:188
+#: ../qml/pages/util/EditCategoryPhone.qml:192
+#: ../qml/pages/util/EditCategoryPhone.qml:349
+#: ../qml/pages/util/GlobalReportPhone.qml:246
+#: ../qml/pages/util/SubCategoryReportPhone.qml:244
+#: ../qml/pages/util/ExpensesTablet.qml:156
+#: ../qml/pages/util/GlobalReportTablet.qml:253
+#: ../qml/pages/util/FindExpensePhone.qml:187
 #: ../qml/pages/util/AddCategoryPhone.qml:210
-#: ../qml/pages/util/AppConfigurationTablet.qml:376
+#: ../qml/pages/util/AppConfigurationTablet.qml:377
 msgid "Close"
 msgstr ""
 
@@ -169,8 +169,9 @@ msgid "(there is no restore)"
 msgstr ""
 
 #: ../qml/DataBaseEraser.qml:27 ../qml/pages/util/AppConfigurationPhone.qml:322
-#: ../qml/pages/util/EditCategoryTablet.qml:343
-#: ../qml/pages/util/EditCategoryPhone.qml:346
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:59
+#: ../qml/pages/util/EditCategoryTablet.qml:357
+#: ../qml/pages/util/EditCategoryPhone.qml:355
 #: ../qml/pages/util/AppConfigurationTablet.qml:312
 #: ../qml/pages/CategoryListPage.qml:54
 msgid "Delete"
@@ -180,7 +181,7 @@ msgstr ""
 msgid "Succesfully Removed ALL data"
 msgstr ""
 
-#: ../qml/pages/GlobalReportPage.qml:27
+#: ../qml/pages/GlobalReportPage.qml:28
 msgid "Category Global Report"
 msgstr ""
 
@@ -190,15 +191,15 @@ msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:53
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:42
-#: ../qml/pages/util/ExpensesPhone.qml:231
+#: ../qml/pages/util/ExpensesPhone.qml:230
 #: ../qml/pages/util/AddCategoryTablet.qml:294
-#: ../qml/pages/util/EditCategoryTablet.qml:252
-#: ../qml/pages/util/EditCategoryTablet.qml:327
+#: ../qml/pages/util/EditCategoryTablet.qml:266
+#: ../qml/pages/util/EditCategoryTablet.qml:341
 #: ../qml/pages/util/EditExpensePhone.qml:159
-#: ../qml/pages/util/EditCategoryPhone.qml:256
-#: ../qml/pages/util/EditCategoryPhone.qml:330
+#: ../qml/pages/util/EditCategoryPhone.qml:263
+#: ../qml/pages/util/EditCategoryPhone.qml:339
 #: ../qml/pages/util/EditExpenseTablet.qml:151
-#: ../qml/pages/util/ExpensesTablet.qml:224
+#: ../qml/pages/util/ExpensesTablet.qml:223
 #: ../qml/pages/util/AppConfigurationTablet.qml:53
 msgid "Confirmation"
 msgstr ""
@@ -208,23 +209,23 @@ msgid "Remove Expenses in the range (no restore)"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:64
-#: ../qml/pages/util/ExpensesPhone.qml:235
+#: ../qml/pages/util/ExpensesPhone.qml:234
 #: ../qml/pages/util/AddCategoryTablet.qml:298
+#: ../qml/pages/util/EditCategoryTablet.qml:270
 #: ../qml/pages/util/EditExpensePhone.qml:163
-#: ../qml/pages/util/EditCategoryPhone.qml:260
+#: ../qml/pages/util/EditCategoryPhone.qml:267
 #: ../qml/pages/util/EditExpenseTablet.qml:155
-#: ../qml/pages/util/ExpensesTablet.qml:228
+#: ../qml/pages/util/ExpensesTablet.qml:227
 #: ../qml/pages/util/AddCategoryPhone.qml:302
 #: ../qml/pages/util/AppConfigurationTablet.qml:64
 msgid "Cancel"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:70
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:59
-#: ../qml/pages/util/ExpensesPhone.qml:240
+#: ../qml/pages/util/ExpensesPhone.qml:239
 #: ../qml/pages/util/EditExpensePhone.qml:168
 #: ../qml/pages/util/EditExpenseTablet.qml:160
-#: ../qml/pages/util/ExpensesTablet.qml:233
+#: ../qml/pages/util/ExpensesTablet.qml:232
 #: ../qml/pages/util/AppConfigurationTablet.qml:70
 msgid "Execute"
 msgstr ""
@@ -255,9 +256,9 @@ msgid "Update"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:143
-#: ../qml/pages/util/ExpensesPhone.qml:303
+#: ../qml/pages/util/ExpensesPhone.qml:302
 #: ../qml/pages/util/AddCategoryTablet.qml:235
-#: ../qml/pages/util/ExpensesTablet.qml:296
+#: ../qml/pages/util/ExpensesTablet.qml:295
 #: ../qml/pages/util/AddCategoryPhone.qml:239
 #: ../qml/pages/util/AppConfigurationTablet.qml:140
 msgid "Field required"
@@ -286,38 +287,38 @@ msgid "There is NO restore !"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:213
-#: ../qml/pages/util/SubCategoryReportTablet.qml:184
+#: ../qml/pages/util/SubCategoryReportTablet.qml:186
 #: ../qml/pages/util/AppConfigurationTablet.qml:212
 msgid "From"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:259
-#: ../qml/pages/util/SubCategoryReportTablet.qml:204
+#: ../qml/pages/util/SubCategoryReportTablet.qml:206
 #: ../qml/pages/util/AppConfigurationTablet.qml:253
 msgid "To"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:299
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:138
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:139
 #: ../qml/pages/util/AppConfigurationTablet.qml:289
 msgid "Category"
 msgstr ""
 
 #: ../qml/pages/util/AppConfigurationPhone.qml:304
-#: ../qml/pages/util/AppConfigurationPhone.qml:327
-#: ../qml/pages/util/ExpensesPhone.qml:187
-#: ../qml/pages/util/ExpensesPhone.qml:263
-#: ../qml/pages/util/ExpensesPhone.qml:292
-#: ../qml/pages/util/ExpensesTablet.qml:181
-#: ../qml/pages/util/ExpensesTablet.qml:256
-#: ../qml/pages/util/ExpensesTablet.qml:285
+#: ../qml/pages/util/AppConfigurationPhone.qml:328
+#: ../qml/pages/util/ExpensesPhone.qml:186
+#: ../qml/pages/util/ExpensesPhone.qml:262
+#: ../qml/pages/util/ExpensesPhone.qml:291
+#: ../qml/pages/util/ExpensesTablet.qml:180
+#: ../qml/pages/util/ExpensesTablet.qml:255
+#: ../qml/pages/util/ExpensesTablet.qml:284
 #: ../qml/pages/util/AppConfigurationTablet.qml:294
-#: ../qml/pages/util/AppConfigurationTablet.qml:317
+#: ../qml/pages/util/AppConfigurationTablet.qml:318
 msgid "Choose..."
 msgstr ""
 
-#: ../qml/pages/util/AppConfigurationPhone.qml:350
-#: ../qml/pages/util/AppConfigurationTablet.qml:339
+#: ../qml/pages/util/AppConfigurationPhone.qml:351
+#: ../qml/pages/util/AppConfigurationTablet.qml:340
 msgid "Help"
 msgstr ""
 
@@ -325,233 +326,233 @@ msgstr ""
 msgid "Delete selected Expsense"
 msgstr ""
 
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:91
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:92
 msgid "OK: Done, Reload the expense List"
 msgstr ""
 
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:123
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:124
 #: ../qml/pages/util/EditExpensePhone.qml:52
 #: ../qml/pages/util/EditExpenseTablet.qml:52
-#: ../qml/pages/util/ExpensesTablet.qml:59
+#: ../qml/pages/util/ExpensesTablet.qml:58
 msgid "Amount"
 msgstr ""
 
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:128
-#: ../qml/pages/util/ExpensesPhone.qml:85
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:129
+#: ../qml/pages/util/ExpensesPhone.qml:84
 #: ../qml/pages/util/EditExpensePhone.qml:78
 #: ../qml/pages/util/EditExpenseTablet.qml:74
-#: ../qml/pages/util/ExpensesTablet.qml:80
+#: ../qml/pages/util/ExpensesTablet.qml:79
 msgid "Date"
 msgstr ""
 
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:133
-#: ../qml/pages/util/ExpensesPhone.qml:212
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:134
+#: ../qml/pages/util/ExpensesPhone.qml:211
 #: ../qml/pages/util/EditExpensePhone.qml:139
 #: ../qml/pages/util/EditExpenseTablet.qml:131
-#: ../qml/pages/util/ExpensesTablet.qml:205
+#: ../qml/pages/util/ExpensesTablet.qml:204
 msgid "Note"
 msgstr ""
 
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:143
-#: ../qml/pages/util/FindExpenseTablet.qml:143
-#: ../qml/pages/util/ExpensesPhone.qml:135
-#: ../qml/pages/util/ExpensesPhone.qml:182
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:144
+#: ../qml/pages/util/FindExpenseTablet.qml:142
+#: ../qml/pages/util/ExpensesPhone.qml:134
+#: ../qml/pages/util/ExpensesPhone.qml:181
 #: ../qml/pages/util/EditExpensePhone.qml:123
-#: ../qml/pages/util/ExpensesTablet.qml:130
-#: ../qml/pages/util/FindExpensePhone.qml:162
+#: ../qml/pages/util/ExpensesTablet.qml:129
+#: ../qml/pages/util/FindExpensePhone.qml:161
 msgid "SubCategory"
 msgstr ""
 
-#: ../qml/pages/util/FindExpenseTablet.qml:143
-#: ../qml/pages/util/ExpensesPhone.qml:135
-#: ../qml/pages/util/ExpensesTablet.qml:130
-#: ../qml/pages/util/FindExpensePhone.qml:162
+#: ../qml/pages/util/FindExpenseTablet.qml:142
+#: ../qml/pages/util/ExpensesPhone.qml:134
+#: ../qml/pages/util/ExpensesTablet.qml:129
+#: ../qml/pages/util/FindExpensePhone.qml:161
 msgid "found"
 msgstr ""
 
-#: ../qml/pages/util/FindExpenseTablet.qml:157
-#: ../qml/pages/util/ExpensesPhone.qml:150
-#: ../qml/pages/util/ExpensesTablet.qml:145
-#: ../qml/pages/util/FindExpensePhone.qml:176
+#: ../qml/pages/util/FindExpenseTablet.qml:156
+#: ../qml/pages/util/ExpensesPhone.qml:149
+#: ../qml/pages/util/ExpensesTablet.qml:144
+#: ../qml/pages/util/FindExpensePhone.qml:175
 msgid "Select"
 msgstr ""
 
-#: ../qml/pages/util/FindExpenseTablet.qml:182
-#: ../qml/pages/util/FindExpensePhone.qml:206
+#: ../qml/pages/util/FindExpenseTablet.qml:181
+#: ../qml/pages/util/FindExpensePhone.qml:205
 msgid "Filter"
 msgstr ""
 
-#: ../qml/pages/util/FindExpenseTablet.qml:188
-#: ../qml/pages/util/FindExpenseTablet.qml:215
-#: ../qml/pages/util/FindExpensePhone.qml:211
-#: ../qml/pages/util/FindExpensePhone.qml:244
+#: ../qml/pages/util/FindExpenseTablet.qml:187
+#: ../qml/pages/util/FindExpenseTablet.qml:214
+#: ../qml/pages/util/FindExpensePhone.qml:210
+#: ../qml/pages/util/FindExpensePhone.qml:243
 msgid "All SubCategory"
 msgstr ""
 
-#: ../qml/pages/util/FindExpenseTablet.qml:209
-#: ../qml/pages/util/FindExpensePhone.qml:237
+#: ../qml/pages/util/FindExpenseTablet.qml:208
+#: ../qml/pages/util/FindExpensePhone.qml:236
 msgid "Search/Reload"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:47
-#: ../qml/pages/util/ExpensesTablet.qml:48
+#: ../qml/pages/util/ExpensesPhone.qml:46
+#: ../qml/pages/util/ExpensesTablet.qml:47
 msgid "Amount inserted successfully"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:58
+#: ../qml/pages/util/ExpensesPhone.qml:57
 msgid "Amount:"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:286
+#: ../qml/pages/util/ExpensesPhone.qml:285
 msgid "Insert expense"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:294
-#: ../qml/pages/util/ExpensesTablet.qml:287
+#: ../qml/pages/util/ExpensesPhone.qml:293
+#: ../qml/pages/util/ExpensesTablet.qml:286
 msgid "Confirm the insertion"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:324
-#: ../qml/pages/util/ExpensesTablet.qml:353
+#: ../qml/pages/util/ExpensesPhone.qml:323
+#: ../qml/pages/util/ExpensesTablet.qml:352
 msgid "Statistics"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:339 ../qml/pages/CategoryEditPage.qml:49
+#: ../qml/pages/util/ExpensesPhone.qml:338 ../qml/pages/CategoryEditPage.qml:52
 msgid "Edit category"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesPhone.qml:353
+#: ../qml/pages/util/ExpensesPhone.qml:352
 msgid "Find Expense"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:62
-#: ../qml/pages/util/GlobalReportPhone.qml:49
-#: ../qml/pages/util/SubCategoryReportPhone.qml:59
-#: ../qml/pages/util/GlobalReportTablet.qml:49
+#: ../qml/pages/util/SubCategoryReportTablet.qml:64
+#: ../qml/pages/util/GlobalReportPhone.qml:52
+#: ../qml/pages/util/SubCategoryReportPhone.qml:61
+#: ../qml/pages/util/GlobalReportTablet.qml:52
 msgid "Instant Report"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:62
-#: ../qml/pages/util/SubCategoryReportPhone.qml:59
+#: ../qml/pages/util/SubCategoryReportTablet.qml:64
+#: ../qml/pages/util/SubCategoryReportPhone.qml:61
 msgid "subcategory expenses at current date"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:63
-#: ../qml/pages/util/GlobalReportPhone.qml:50
-#: ../qml/pages/util/SubCategoryReportPhone.qml:60
-#: ../qml/pages/util/GlobalReportTablet.qml:50
+#: ../qml/pages/util/SubCategoryReportTablet.qml:65
+#: ../qml/pages/util/GlobalReportPhone.qml:53
+#: ../qml/pages/util/SubCategoryReportPhone.qml:62
+#: ../qml/pages/util/GlobalReportTablet.qml:53
 msgid "Last Month Report"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:63
-#: ../qml/pages/util/SubCategoryReportPhone.qml:60
+#: ../qml/pages/util/SubCategoryReportTablet.qml:65
+#: ../qml/pages/util/SubCategoryReportPhone.qml:62
 msgid "subcategory expenses in the last month"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:64
-#: ../qml/pages/util/GlobalReportPhone.qml:51
-#: ../qml/pages/util/SubCategoryReportPhone.qml:61
-#: ../qml/pages/util/GlobalReportTablet.qml:51
+#: ../qml/pages/util/SubCategoryReportTablet.qml:66
+#: ../qml/pages/util/GlobalReportPhone.qml:54
+#: ../qml/pages/util/SubCategoryReportPhone.qml:63
+#: ../qml/pages/util/GlobalReportTablet.qml:54
 msgid "Custom Report"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:64
-#: ../qml/pages/util/SubCategoryReportPhone.qml:61
+#: ../qml/pages/util/SubCategoryReportTablet.qml:66
+#: ../qml/pages/util/SubCategoryReportPhone.qml:63
 msgid "subcategory expenses in a custom range"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:80
+#: ../qml/pages/util/SubCategoryReportTablet.qml:82
 msgid "Available Report"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:117
-#: ../qml/pages/util/GlobalReportPhone.qml:102
-#: ../qml/pages/util/SubCategoryReportPhone.qml:113
-#: ../qml/pages/util/GlobalReportTablet.qml:105
+#: ../qml/pages/util/SubCategoryReportTablet.qml:119
+#: ../qml/pages/util/GlobalReportPhone.qml:106
+#: ../qml/pages/util/SubCategoryReportPhone.qml:115
+#: ../qml/pages/util/GlobalReportTablet.qml:108
 msgid "Show/Refresh"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:129
-#: ../qml/pages/util/GlobalReportPhone.qml:122
-#: ../qml/pages/util/SubCategoryReportPhone.qml:125
-#: ../qml/pages/util/GlobalReportTablet.qml:125
+#: ../qml/pages/util/SubCategoryReportTablet.qml:131
+#: ../qml/pages/util/GlobalReportPhone.qml:126
+#: ../qml/pages/util/SubCategoryReportPhone.qml:127
+#: ../qml/pages/util/GlobalReportTablet.qml:128
 msgid "Situation at"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:129
-#: ../qml/pages/util/SubCategoryReportTablet.qml:142
-#: ../qml/pages/util/SubCategoryReportTablet.qml:152
-#: ../qml/pages/util/SubCategoryReportTablet.qml:234
-#: ../qml/pages/util/SubCategoryReportTablet.qml:240
-#: ../qml/pages/util/GlobalReportPhone.qml:137
-#: ../qml/pages/util/GlobalReportPhone.qml:147
-#: ../qml/pages/util/GlobalReportPhone.qml:226
-#: ../qml/pages/util/GlobalReportPhone.qml:231
-#: ../qml/pages/util/SubCategoryReportPhone.qml:138
-#: ../qml/pages/util/SubCategoryReportPhone.qml:148
-#: ../qml/pages/util/SubCategoryReportPhone.qml:233
-#: ../qml/pages/util/GlobalReportTablet.qml:114
-#: ../qml/pages/util/GlobalReportTablet.qml:125
-#: ../qml/pages/util/GlobalReportTablet.qml:140
-#: ../qml/pages/util/GlobalReportTablet.qml:150
-#: ../qml/pages/util/GlobalReportTablet.qml:234
-#: ../qml/pages/util/GlobalReportTablet.qml:239
+#: ../qml/pages/util/SubCategoryReportTablet.qml:131
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:150
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:117
+#: ../qml/pages/util/GlobalReportTablet.qml:128
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:153
+#: ../qml/pages/util/GlobalReportTablet.qml:237
+#: ../qml/pages/util/GlobalReportTablet.qml:242
 msgid "(date format is yyyy-mm-dd)"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:142
-#: ../qml/pages/util/SubCategoryReportTablet.qml:240
-#: ../qml/pages/util/GlobalReportPhone.qml:111
-#: ../qml/pages/util/GlobalReportPhone.qml:137
-#: ../qml/pages/util/GlobalReportPhone.qml:231
-#: ../qml/pages/util/SubCategoryReportPhone.qml:138
-#: ../qml/pages/util/SubCategoryReportPhone.qml:233
-#: ../qml/pages/util/GlobalReportTablet.qml:114
-#: ../qml/pages/util/GlobalReportTablet.qml:140
-#: ../qml/pages/util/GlobalReportTablet.qml:239
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:115
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:117
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:242
 msgid "NO DATA FOUND"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:142
-#: ../qml/pages/util/GlobalReportPhone.qml:137
-#: ../qml/pages/util/SubCategoryReportPhone.qml:138
-#: ../qml/pages/util/GlobalReportTablet.qml:140
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/GlobalReportTablet.qml:143
 msgid "for Monthly report from"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:142
-#: ../qml/pages/util/SubCategoryReportTablet.qml:152
-#: ../qml/pages/util/SubCategoryReportTablet.qml:234
-#: ../qml/pages/util/SubCategoryReportTablet.qml:240
-#: ../qml/pages/util/GlobalReportPhone.qml:147
-#: ../qml/pages/util/GlobalReportPhone.qml:226
-#: ../qml/pages/util/GlobalReportPhone.qml:231
-#: ../qml/pages/util/SubCategoryReportPhone.qml:138
-#: ../qml/pages/util/SubCategoryReportPhone.qml:148
-#: ../qml/pages/util/SubCategoryReportPhone.qml:233
-#: ../qml/pages/util/GlobalReportTablet.qml:140
-#: ../qml/pages/util/GlobalReportTablet.qml:150
-#: ../qml/pages/util/GlobalReportTablet.qml:234
-#: ../qml/pages/util/GlobalReportTablet.qml:239
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:150
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:153
+#: ../qml/pages/util/GlobalReportTablet.qml:237
+#: ../qml/pages/util/GlobalReportTablet.qml:242
 msgid "to"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:152
-#: ../qml/pages/util/GlobalReportPhone.qml:147
-#: ../qml/pages/util/GlobalReportTablet.qml:150
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportTablet.qml:153
 msgid "Monthly report from"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:234
-#: ../qml/pages/util/GlobalReportPhone.qml:226
-#: ../qml/pages/util/GlobalReportTablet.qml:234
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportTablet.qml:237
 msgid "Custom report from"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportTablet.qml:240
-#: ../qml/pages/util/GlobalReportPhone.qml:231
-#: ../qml/pages/util/SubCategoryReportPhone.qml:233
-#: ../qml/pages/util/GlobalReportTablet.qml:239
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:242
 msgid "from"
 msgstr ""
 
@@ -586,22 +587,22 @@ msgid "No SUBCategory found in List"
 msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:81
-#: ../qml/pages/util/EditCategoryTablet.qml:59
-#: ../qml/pages/util/EditCategoryPhone.qml:58
+#: ../qml/pages/util/EditCategoryTablet.qml:55
+#: ../qml/pages/util/EditCategoryPhone.qml:55
 #: ../qml/pages/util/AddCategoryPhone.qml:79
 msgid "Category Name"
 msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:100
-#: ../qml/pages/util/EditCategoryTablet.qml:78
-#: ../qml/pages/util/EditCategoryPhone.qml:77
+#: ../qml/pages/util/EditCategoryTablet.qml:74
+#: ../qml/pages/util/EditCategoryPhone.qml:74
 #: ../qml/pages/util/AddCategoryPhone.qml:98
 msgid "Add Subcategory"
 msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:115
-#: ../qml/pages/util/EditCategoryTablet.qml:93
-#: ../qml/pages/util/EditCategoryPhone.qml:103
+#: ../qml/pages/util/EditCategoryTablet.qml:89
+#: ../qml/pages/util/EditCategoryPhone.qml:99
 #: ../qml/pages/util/AddCategoryPhone.qml:117
 msgid "Add to List"
 msgstr ""
@@ -612,8 +613,8 @@ msgid "Subcategory List"
 msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:162
-#: ../qml/pages/util/EditCategoryTablet.qml:132
-#: ../qml/pages/util/EditCategoryPhone.qml:142
+#: ../qml/pages/util/EditCategoryTablet.qml:126
+#: ../qml/pages/util/EditCategoryPhone.qml:136
 #: ../qml/pages/util/AddCategoryPhone.qml:164
 msgid "Select the subcategory to remove"
 msgstr ""
@@ -626,10 +627,10 @@ msgid "Remove"
 msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:203
-#: ../qml/pages/util/EditCategoryTablet.qml:144
-#: ../qml/pages/util/EditCategoryTablet.qml:179
-#: ../qml/pages/util/EditCategoryPhone.qml:154
-#: ../qml/pages/util/EditCategoryPhone.qml:189
+#: ../qml/pages/util/EditCategoryTablet.qml:138
+#: ../qml/pages/util/EditCategoryTablet.qml:182
+#: ../qml/pages/util/EditCategoryPhone.qml:148
+#: ../qml/pages/util/EditCategoryPhone.qml:187
 #: ../qml/pages/util/AddCategoryPhone.qml:205
 msgid "Subcategories"
 msgstr ""
@@ -641,9 +642,10 @@ msgstr ""
 
 #: ../qml/pages/util/AddCategoryTablet.qml:263
 #: ../qml/pages/util/AddCategoryTablet.qml:303
-#: ../qml/pages/util/EditCategoryTablet.qml:226
-#: ../qml/pages/util/EditCategoryPhone.qml:230
-#: ../qml/pages/util/EditCategoryPhone.qml:265
+#: ../qml/pages/util/EditCategoryTablet.qml:229
+#: ../qml/pages/util/EditCategoryTablet.qml:275
+#: ../qml/pages/util/EditCategoryPhone.qml:227
+#: ../qml/pages/util/EditCategoryPhone.qml:272
 #: ../qml/pages/util/AddCategoryPhone.qml:267
 #: ../qml/pages/util/AddCategoryPhone.qml:307
 msgid "Save"
@@ -663,59 +665,61 @@ msgstr ""
 msgid "Expense (at "
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:42
-#: ../qml/pages/util/EditCategoryPhone.qml:41
+#: ../qml/pages/util/EditCategoryTablet.qml:38
+#: ../qml/pages/util/EditCategoryPhone.qml:38
 msgid "Operation executed successfully !"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:47
-#: ../qml/pages/util/EditCategoryPhone.qml:46
+#: ../qml/pages/util/EditCategoryTablet.qml:43
+#: ../qml/pages/util/EditCategoryPhone.qml:43
 msgid "SubCategory invalid or duplicated"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:103
-#: ../qml/pages/util/EditCategoryTablet.qml:176
-#: ../qml/pages/util/EditCategoryPhone.qml:113
-#: ../qml/pages/util/EditCategoryPhone.qml:186
-msgid "(Modified - NOT Saved)"
-msgstr ""
-
-#: ../qml/pages/util/EditCategoryTablet.qml:122
-#: ../qml/pages/util/EditCategoryPhone.qml:132
+#: ../qml/pages/util/EditCategoryTablet.qml:116
+#: ../qml/pages/util/EditCategoryPhone.qml:126
 msgid "Subcategory"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:195
-#: ../qml/pages/util/EditCategoryPhone.qml:205
+#: ../qml/pages/util/EditCategoryTablet.qml:179
+msgid "(Modified - NOT Saved)"
+msgstr ""
+
+#: ../qml/pages/util/EditCategoryTablet.qml:198
+#: ../qml/pages/util/EditCategoryPhone.qml:202
 msgid "Show/Edit..."
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:238
-#: ../qml/pages/util/EditCategoryPhone.qml:242
+#: ../qml/pages/util/EditCategoryTablet.qml:240
+#: ../qml/pages/util/EditCategoryPhone.qml:239
 msgid "Delete Category"
 msgstr ""
 
 #: ../qml/pages/util/EditCategoryTablet.qml:253
-#: ../qml/pages/util/EditCategoryPhone.qml:257
+#: ../qml/pages/util/EditCategoryPhone.qml:251
+msgid "At the modifications end, press Save button"
+msgstr ""
+
+#: ../qml/pages/util/EditCategoryTablet.qml:267
+#: ../qml/pages/util/EditCategoryPhone.qml:264
 msgid "Save Category modifications"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:329
-#: ../qml/pages/util/EditCategoryPhone.qml:332
+#: ../qml/pages/util/EditCategoryTablet.qml:343
+#: ../qml/pages/util/EditCategoryPhone.qml:341
 msgid "Delete this Category with his subcategory and"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:329
-#: ../qml/pages/util/EditCategoryPhone.qml:332
+#: ../qml/pages/util/EditCategoryTablet.qml:343
+#: ../qml/pages/util/EditCategoryPhone.qml:341
 msgid "ALL"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:329
+#: ../qml/pages/util/EditCategoryTablet.qml:343
 msgid "associated expense"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryTablet.qml:358
-#: ../qml/pages/util/EditCategoryPhone.qml:361
+#: ../qml/pages/util/EditCategoryTablet.qml:373
+#: ../qml/pages/util/EditCategoryPhone.qml:371
 msgid "Operation Executed Successfully"
 msgstr ""
 
@@ -728,80 +732,80 @@ msgstr ""
 msgid "Invalid input value(s)"
 msgstr ""
 
-#: ../qml/pages/util/EditCategoryPhone.qml:332
+#: ../qml/pages/util/EditCategoryPhone.qml:341
 msgid "associated expense ?"
 msgstr ""
 
 #: ../qml/pages/util/EditExpenseTablet.qml:115
-#: ../qml/pages/util/ExpensesTablet.qml:175
+#: ../qml/pages/util/ExpensesTablet.qml:174
 msgid "Sub Category"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:49
-#: ../qml/pages/util/GlobalReportTablet.qml:49
+#: ../qml/pages/util/GlobalReportPhone.qml:52
+#: ../qml/pages/util/GlobalReportTablet.qml:52
 msgid "expenses amount at current date"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:50
-#: ../qml/pages/util/GlobalReportTablet.qml:50
+#: ../qml/pages/util/GlobalReportPhone.qml:53
+#: ../qml/pages/util/GlobalReportTablet.qml:53
 msgid "expenses in the last month"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:51
-#: ../qml/pages/util/GlobalReportTablet.qml:51
+#: ../qml/pages/util/GlobalReportPhone.qml:54
+#: ../qml/pages/util/GlobalReportTablet.qml:54
 msgid "expenses in a custom range"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:61
+#: ../qml/pages/util/GlobalReportPhone.qml:64
 msgid "Report Types"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:111
-#: ../qml/pages/util/GlobalReportTablet.qml:114
+#: ../qml/pages/util/GlobalReportPhone.qml:115
+#: ../qml/pages/util/GlobalReportTablet.qml:117
 msgid "at"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:180
-#: ../qml/pages/util/SubCategoryReportPhone.qml:181
-#: ../qml/pages/util/GlobalReportTablet.qml:183
+#: ../qml/pages/util/GlobalReportPhone.qml:184
+#: ../qml/pages/util/SubCategoryReportPhone.qml:183
+#: ../qml/pages/util/GlobalReportTablet.qml:186
 msgid "From:"
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportPhone.qml:198
-#: ../qml/pages/util/SubCategoryReportPhone.qml:199
-#: ../qml/pages/util/GlobalReportTablet.qml:203
+#: ../qml/pages/util/GlobalReportPhone.qml:202
+#: ../qml/pages/util/SubCategoryReportPhone.qml:201
+#: ../qml/pages/util/GlobalReportTablet.qml:206
 msgid "To:"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportPhone.qml:71
+#: ../qml/pages/util/SubCategoryReportPhone.qml:73
 msgid "Available Reports"
 msgstr ""
 
-#: ../qml/pages/util/SubCategoryReportPhone.qml:227
+#: ../qml/pages/util/SubCategoryReportPhone.qml:229
 msgid "Custom report from: "
 msgstr ""
 
-#: ../qml/pages/util/ExpensesTablet.qml:279
+#: ../qml/pages/util/ExpensesTablet.qml:278
 msgid "Insert"
 msgstr ""
 
-#: ../qml/pages/util/ExpensesTablet.qml:323
+#: ../qml/pages/util/ExpensesTablet.qml:322
 msgid "Edit category..."
 msgstr ""
 
-#: ../qml/pages/util/ExpensesTablet.qml:337
+#: ../qml/pages/util/ExpensesTablet.qml:336
 msgid "Find Expense..."
 msgstr ""
 
-#: ../qml/pages/util/GlobalReportTablet.qml:68
+#: ../qml/pages/util/GlobalReportTablet.qml:71
 msgid "Report Type"
 msgstr ""
 
-#: ../qml/pages/util/FindExpensePhone.qml:249
+#: ../qml/pages/util/FindExpensePhone.qml:248
 msgid "Found"
 msgstr ""
 
-#: ../qml/pages/util/FindExpensePhone.qml:249
+#: ../qml/pages/util/FindExpensePhone.qml:248
 msgid "expense in the date range"
 msgstr ""
 
@@ -922,7 +926,7 @@ msgstr ""
 msgid "Manage expenses for"
 msgstr ""
 
-#: ../qml/pages/AddCategoryPage.qml:26
+#: ../qml/pages/AddCategoryPage.qml:28
 msgid "Add new Category and subcategory"
 msgstr ""
 

@@ -16,15 +16,14 @@ import "../../js/storage.js" as Storage
 /* import folder */
 import "../../dialogs"
 
+
+/*
+  Content of the search expenses Page. This content is used for Tablet devices
+*/
 Column{
      id: searchExpenseColum
      anchors.fill: parent
      spacing: units.gu(3.5)
-
-
-//    Component.onCompleted: {
-//         searchExpenseButton.clicked.connect(send)
-//    }
 
     /* placeholder: required to place the content under the header */
     Rectangle {
@@ -55,7 +54,7 @@ Column{
         }
 
         /*
-           a PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
+           PopOver containing a DatePicker, necessary use a PopOver a container due to a bug on setting minimum date
            with a simple DatePicker Component
        */
        Component {

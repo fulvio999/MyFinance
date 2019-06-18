@@ -18,8 +18,10 @@ import "../../js/QChart.js" as Charts
 
 import "../../dialogs"
 
-//-------- Display reports (charts) for the chosen SUB-Category included in the chosen Categeory (eg: Home, Travel...) -------
-
+/*
+   Content of the report Page (charts) for a chosen SUB-Category. 
+   This is the content for Tablet devices
+*/
 Column{
     id: reportPageColumn
     anchors.fill: parent

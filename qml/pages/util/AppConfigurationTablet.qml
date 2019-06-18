@@ -310,6 +310,7 @@ Column{
         Button {
             id: confirmDeleteButton
             text:  i18n.tr("Delete")
+            color: UbuntuColors.red
             iconName: "delete"
             width: units.gu(14)
             onClicked: {

@@ -28,6 +28,9 @@ Page{
     property string categoryName;
     property int categoryId;
 
+    /* flag to keep track if category list was modified */
+    property bool categoryModified : false;
+
     /* keep the updated List of subcategory edited by the user (initially contains the saved subcategory) */
     ListModel {
        id: categoryListModelToSave

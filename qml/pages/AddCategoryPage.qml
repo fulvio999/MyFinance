@@ -18,7 +18,9 @@ import "../dialogs"
 import "./util"
 
 
-//------------- ADD NEW CATEGORY and SUBCATEGORY PAGE ---------------
+/*
+  Page to Add a NEW CATEGORY and SUBCATEGORY
+*/
 Page {
     id: addCategoryPage
 

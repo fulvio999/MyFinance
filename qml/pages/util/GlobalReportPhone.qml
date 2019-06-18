@@ -15,8 +15,11 @@ import "../../js/globalReportChart.js" as GlobalReportChart
 import "../../js/QChart.js" as Charts
 import "../../js/QChartGallery.js" as ChartsData
 
-/* Show the global reports: the ones abaout ALL the category */
 
+/*
+  Content of the global reports Page. Global reports are the ones about ALL the category
+  This is the content for Phone devices
+ */
 Column{
     id: globalReportPageColumn
     anchors.fill: parent
@@ -65,6 +68,7 @@ Column{
     Row{
         spacing: units.gu(2)
         Rectangle{
+            id: reportSelectorContainer
             width: globalReportPageColumn.width - units.gu(17)
             height:units.gu(7)
             /* to get the background color of the curreunt theme. Necessary if default theme is not used */
@@ -98,7 +102,7 @@ Column{
         }
 
         Button {
-            id: showChartButton
+            id: showChartButton          
             text: i18n.tr("Show/Refresh")
             onClicked: {
 
