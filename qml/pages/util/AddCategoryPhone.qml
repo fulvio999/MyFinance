@@ -191,6 +191,7 @@ Column {
                            id: removeItemButton
                            objectName: "removeItem"
                            text: i18n.tr("Remove")
+                           color: UbuntuColors.red
                            width: units.gu(14)
                            onClicked: {
                                CategoryUtils.removeSubCategory(subCategoryOptionSelector)
@@ -266,7 +267,7 @@ Column {
                 objectName: "Save"
                 text: i18n.tr("Save")
                 width: units.gu(20)
-                color: UbuntuColors.orange
+                color: UbuntuColors.green
                 onClicked: {
                     PopupUtils.open(confirmAddNewExpense)
                 }
@@ -296,52 +297,60 @@ Column {
          Dialog {
             id: confirmDialogue
             title: "Confirmation"
-            text: i18n.tr("Save Category")+"?"
+            text: i18n.tr("Save the new Category")+"?"
 
-            Button {
-                text: i18n.tr("Cancel")
-                onClicked: PopupUtils.close(confirmDialogue)
-            }
+            Row{
+                spacing: units.gu(2)
+                anchors.horizontalCenter: parent.horizontalCenter
 
-            Button {
-                text: i18n.tr("Save")
-                onClicked: {
-                    PopupUtils.close(confirmDialogue)
+                Button {
+                    text: i18n.tr("Cancel")
+                    width: units.gu(14)
+                    onClicked: PopupUtils.close(confirmDialogue)
+                }
 
-                      var isCategoryDuplicated = Storage.searchCategoryByName(newCategoryField.text);
+                Button {
+                    text: i18n.tr("Save")
+                    width: units.gu(14)
+                    onClicked: {
+                          PopupUtils.close(confirmDialogue)
 
-                      if(isCategoryDuplicated.length !== 0){
-                         PopupUtils.open(categoryDuplicatedDialogue)
+                          var isCategoryDuplicated = Storage.searchCategoryByName(newCategoryField.text);
 
-                      /* at least one SubCategory should be present */
-                      }else if(categoryListModelToSave.count === 0 ){
-                          PopupUtils.open(PopupUtils.open(noSubCategoryFoundDialogue))
+                          if(isCategoryDuplicated.length !== 0){
+                             PopupUtils.open(categoryDuplicatedDialogue)
 
-                      } else {  /* insert all */
-                        Storage.insertCategory(newCategoryField.text);
-                        var categoryId = Storage.getLastId('category');
+                          /* at least one SubCategory should be present */
+                          }else if(categoryListModelToSave.count === 0 ){
+                              PopupUtils.open(PopupUtils.open(noSubCategoryFoundDialogue))
 
-                        for (var i = 0; i < categoryListModelToSave.count; i++)
-                        {
-                           Storage.insertSubCategory(categoryId, categoryListModelToSave.get(i).sub_cat_name)
-                           var lastSubCategoryId = Storage.getLastId('sub_category');
-                           Storage.insertSubCategoryCurrentReport(lastSubCategoryId,0); /* init Subcategory report */
+                          } else {  /* insert all */
+                            Storage.insertCategory(newCategoryField.text);
+                            var categoryId = Storage.getLastId('category');
+
+                            for (var i = 0; i < categoryListModelToSave.count; i++)
+                            {
+                               Storage.insertSubCategory(categoryId, categoryListModelToSave.get(i).sub_cat_name)
+                               var lastSubCategoryId = Storage.getLastId('sub_category');
+                               Storage.insertSubCategoryCurrentReport(lastSubCategoryId,0); /* init Subcategory report */
+                            }
+
+                            Storage.insertCategoryCurrentReport(categoryId,0);
+
+                            /* clean fields */
+                            newCategoryField.readOnly = false
+                            newCategoryField.text = ""
+                            newSubCategoryField = ""
+                            categoryListModelToSave.clear();
+
+                            Storage.getAllCategory();
+
+                            PopupUtils.open(saveOperationSuccessDialogue)
                         }
-
-                        Storage.insertCategoryCurrentReport(categoryId,0);
-
-                        /* clean fields */
-                        newCategoryField.readOnly = false
-                        newCategoryField.text = ""
-                        newSubCategoryField = ""
-                        categoryListModelToSave.clear();
-
-                        Storage.getAllCategory();
-
-                        PopupUtils.open(saveOperationSuccessDialogue)
                     }
                 }
-            }
+
+          } //row
         }
     }
 

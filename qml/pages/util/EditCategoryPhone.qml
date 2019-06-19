@@ -85,7 +85,6 @@ Column {
        }
 
        Row{
-
             /* transparent placeholder: required to place the content under the header */
             Rectangle {
                color:  "transparent"
@@ -340,47 +339,57 @@ Column {
            modal:true
            text:i18n.tr("Delete this Category with his subcategory and")+ "<b> "+i18n.tr("ALL")+"</b>" +i18n.tr("associated expense ?")
 
-           Label{
-               id:operationresultLabel
-               text: ""
-           }
-
-           Button {
-               text: i18n.tr("Close")
-               onClicked: PopupUtils.close(confirmDeleteCategory)
-           }
-
-           Button {
-               id:deleteButton
-               text: i18n.tr("Delete")
-               color: UbuntuColors.red
-               onClicked: {
-
-                   /* remove ALL data about the CATEGORY: reports, expense, subcategory */
-
-                   var subCategoryIdList = Storage.getSubCategoryByCategoryId(categoryEditPage.categoryId);
-                   for(var i=0; i<subCategoryIdList.rows.length; i++){
-                      Storage.deleteSubCategoryReport(subCategoryIdList.rows.item(i).id)
-                   }
-
-                   Storage.deleteCategory(categoryEditPage.categoryId);
-                   Storage.deleteAllSubCategoryForCategory(categoryEditPage.categoryId);
-                   Storage.deleteAllExpenseForCategory(categoryEditPage.categoryId);
-                   Storage.deleteCategoryReport(categoryEditPage.categoryId);
-
-                   operationresultLabel.text = i18n.tr("Operation Executed Successfully")
-                   operationresultLabel.color = UbuntuColors.green
-
-                   Storage.getAllCategory(); //refresh category list
-                   adaptivePageLayout.removePages(categoryExpensePage);
-
-                   deleteButton.enabled = false;
-
-                   /* if no categoryis remains: allow at the user to import default ones*/
-                   if(Storage.getAllCategoryNames().rows.length === 0 )
-                      settings.defaultDataAlreadyImported = false
+           Row{
+               anchors.horizontalCenter: parent.horizontalCenter
+               Label{
+                   id:operationresultLabel
+                   text: " "
                }
            }
+
+           Row{
+                spacing: units.gu(2)
+                anchors.horizontalCenter: parent.horizontalCenter
+
+                Button {
+                   text: i18n.tr("Close")
+                   width: units.gu(14)
+                   onClicked: PopupUtils.close(confirmDeleteCategory)
+                }
+
+                Button {
+                     id:deleteButton
+                     text: i18n.tr("Delete")
+                     width: units.gu(14)
+                     color: UbuntuColors.red
+                     onClicked: {
+
+                         /* remove ALL data about the CATEGORY: reports, expense, subcategory */
+
+                         var subCategoryIdList = Storage.getSubCategoryByCategoryId(categoryEditPage.categoryId);
+                         for(var i=0; i<subCategoryIdList.rows.length; i++){
+                            Storage.deleteSubCategoryReport(subCategoryIdList.rows.item(i).id)
+                         }
+
+                         Storage.deleteCategory(categoryEditPage.categoryId);
+                         Storage.deleteAllSubCategoryForCategory(categoryEditPage.categoryId);
+                         Storage.deleteAllExpenseForCategory(categoryEditPage.categoryId);
+                         Storage.deleteCategoryReport(categoryEditPage.categoryId);
+
+                         operationresultLabel.text = i18n.tr("Operation Executed Successfully")
+                         operationresultLabel.color = UbuntuColors.green
+
+                         Storage.getAllCategory(); //refresh category list
+                         adaptivePageLayout.removePages(categoryExpensePage);
+
+                         deleteButton.enabled = false;
+
+                         /* if no categoryis remains: allow at the user to import default ones*/
+                         if(Storage.getAllCategoryNames().rows.length === 0 )
+                            settings.defaultDataAlreadyImported = false
+                     }
+                 }
+            }
        }
    }
 

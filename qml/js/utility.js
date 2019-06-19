@@ -51,9 +51,9 @@
     function getContentHeight(){
 
         if(root.width > units.gu(80))
-            return categoryExpensePage.height + categoryExpensePage.height/2 + units.gu(20)
+            return manageCategoryExpensePage.height + manageCategoryExpensePage.height/2 + units.gu(20)
         else
-            return categoryExpensePage.height + categoryExpensePage.height/2 + units.gu(10) //phone
+            return manageCategoryExpensePage.height + manageCategoryExpensePage.height/2 + units.gu(10) //phone
     }
 
     /* Return the todayDate with UTC values set to zero */

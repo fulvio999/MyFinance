@@ -13,9 +13,10 @@ import "../../js/storage.js" as Storage
 /* import folder */
 import "../../dialogs"
 
-//--------------- For PHONE Page with application settings and maintenance utility ---------------
 
-
+/*
+  Content of the Application Configuration page, used for TABLET
+*/
 Column{
     id: appConfigurationPhone
 
@@ -134,14 +135,7 @@ Column{
                 }
             }
         }
-    }
 
-    Row{
-        Label {
-            id: fieldRequiredLabel
-            anchors.verticalCenter: updateGeneralSettingsButton.verticalCenter
-            text: "* "+i18n.tr("Field required")
-        }
     }
 
     /* line separator */
@@ -355,6 +349,14 @@ Column{
         }
     }
 
+    Row{
+        anchors.horizontalCenter: parent.horizontalCenter
+        Label {
+            id: fieldRequiredLabel            
+            text: "* "+i18n.tr("Field required")
+        }
+    }
+
     //----------- Category selector PopUp --------------
     ListModel{
         /* filled when the user press the choose category button */
@@ -374,20 +376,27 @@ Column{
                  containerHeight: itemHeight * 4
              }
 
-             Button {
-                 text: i18n.tr("Confirm")
-                 onClicked: {
-                     var index = categoryOptionSelector.selectedIndex;
-                     /* 'cat_name' is column name of the returned data-set for the query  */
-                     categoryChooserButton.text = reportCategoryListModel.get(index).cat_name;
-                     PopupUtils.close(categoryPickerDialog)
-                 }
-             }
+             Row{
+                 spacing: units.gu(2)
+                 anchors.horizontalCenter: parent.horizontalCenter
 
-             Button {
-                 text: i18n.tr("Close")
-                 onClicked: {
-                     PopupUtils.close(categoryPickerDialog)
+                 Button {
+                     text: i18n.tr("Confirm")
+                     width: units.gu(14)
+                     onClicked: {
+                         var index = categoryOptionSelector.selectedIndex;
+                         /* 'cat_name' is column name of the returned data-set for the query  */
+                         categoryChooserButton.text = reportCategoryListModel.get(index).cat_name;
+                         PopupUtils.close(categoryPickerDialog)
+                     }
+                 }
+
+                 Button {
+                     text: i18n.tr("Close")
+                     width: units.gu(14)
+                     onClicked: {
+                         PopupUtils.close(categoryPickerDialog)
+                     }
                  }
              }
          }

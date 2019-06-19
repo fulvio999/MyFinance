@@ -32,7 +32,7 @@ Component {
 
             onClicked: {
                 loadingPageActivity.running = true
-                adaptivePageLayout.addPageToNextColumn(categoryListPage, Qt.resolvedUrl("../CategoryExpensePage.qml"),
+                adaptivePageLayout.addPageToNextColumn(categoryListPage, Qt.resolvedUrl("../ManageCategoryExpensePage.qml"),
                                                        {
                                                            /* <page-variable-name>:<property-value from db> */
                                                            id:id, /* id of the category */

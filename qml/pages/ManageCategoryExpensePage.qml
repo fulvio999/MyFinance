@@ -17,9 +17,11 @@ import "../js/subCategoryReportChart.js" as SubCategoryReportChart
 import "../dialogs"
 import "./util"
 
-//-------------------- EXPENSE CATEGORY PAGE ----------------------
+/*
+   Main page to manage expenses for a selected CATEGORY
+*/
 Page{
-    id:categoryExpensePage
+    id:manageCategoryExpensePage
 
     anchors.fill: parent
 
@@ -34,19 +36,8 @@ Page{
 
     header: PageHeader {
         id: headerDetailsPage
-        title: i18n.tr("Manage expenses for")+": " + "<b>" +categoryExpensePage.categoryName +"</b>"
+        title: i18n.tr("Manage expenses for")+": " + "<b>" +manageCategoryExpensePage.categoryName +"</b>"
     }
-
-    /* to set default values on category changes */
-    onIdChanged: {
-
-        //TODO: blank all chart models....
-
-        //SubCategoryReportChart.clearModels();
-
-
-    }
-
 
     /* to have a scrollable column when the keyboard cover some input field */
     Flickable {
@@ -57,7 +48,7 @@ Page{
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: categoryExpensePage.bottom
+            bottom: manageCategoryExpensePage.bottom
             bottomMargin: units.gu(2)
         }
 

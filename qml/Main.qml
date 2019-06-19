@@ -134,9 +134,7 @@ MainView {
         id: adaptivePageLayout
         anchors.fill: parent
 
-        /* mandatory */
+        /* mandatory: first page to load */
         primaryPage: CategoryListPage{}
-
     }
-
 }

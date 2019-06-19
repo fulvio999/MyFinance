@@ -19,7 +19,7 @@ import "../dialogs"
 import "./util"
 
 /*
-  List the currently available Category
+  First page loaded: list the currently available Category
  */
 Page{
     id: categoryListPage

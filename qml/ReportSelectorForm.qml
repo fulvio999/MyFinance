@@ -14,10 +14,11 @@ import "./js/QChart.js" as Charts
 import "./js/QChartGallery.js" as ChartsData
 
 import "./js/storage.js" as Storage
-
 import "./js/utility.js" as Utility
 
-
+/*
+  Content of the Dialog shown when the user want an expense report with a custom time range
+*/
 Row{
     id: criteriaRow
     spacing: units.gu(3)

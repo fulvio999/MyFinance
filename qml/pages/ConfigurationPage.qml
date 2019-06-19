@@ -18,7 +18,9 @@ import "../dialogs"
 import "./util"
 
 
-//----------------- Configuration page -----------------
+/*
+  Configuration page for the Application
+*/
 Page {
     id: configurationPage
 

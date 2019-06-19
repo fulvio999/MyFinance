@@ -119,12 +119,13 @@ Column {
 
         //-------------------------------------
         Label{
-            anchors.verticalCenter: subCategoryChooserButton.verticalCenter
+            anchors.verticalCenter: expenseDateLabel.verticalCenter
             text: i18n.tr("SubCategory")+":"
         }
 
         Label{
-            anchors.verticalCenter: subCategoryChooserButton.verticalCenter
+            id: subCategoryLabel
+            anchors.verticalCenter: expenseDateLabel.verticalCenter
             text: editExpensePage.currentSubCategory
         }
     }
@@ -203,6 +204,7 @@ Column {
 
     Row{
         spacing: units.gu(2)
+        anchors.horizontalCenter: parent.horizontalCenter
 
         /* placeholder: required to place the content under the header */
         Rectangle {
@@ -223,6 +225,4 @@ Column {
             }
         }
     }
-
-
 }

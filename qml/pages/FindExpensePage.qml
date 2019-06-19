@@ -18,7 +18,9 @@ import "../dialogs"
 import "./util"
 
 
-//---------------- Find Expense Page--------------
+/*
+  Find Expenses Page for a given category
+*/
 Page{
         id:findExpensePage
 

@@ -65,7 +65,7 @@ Column {
         Label {
             id: currencyLabel
             anchors.verticalCenter: amountField.verticalCenter
-            text: categoryExpensePage.currentCurrency
+            text: root.currency
         }
 
         Label {
@@ -111,12 +111,13 @@ Column {
 
         //-------------------------------------
         Label{
-            anchors.verticalCenter: subCategoryChooserButton.verticalCenter
+            anchors.verticalCenter: expenseDateLabel.verticalCenter
             text: i18n.tr("Sub Category")+":"
         }
 
         Label{
-            anchors.verticalCenter: subCategoryChooserButton.verticalCenter
+            id: subCategoryLabel
+            anchors.verticalCenter: expenseDateLabel.verticalCenter
             text: editExpensePage.currentSubCategory
         }
     }
@@ -197,21 +198,14 @@ Column {
 
     Row{
         spacing: units.gu(2)
-
-        /* transparent placeholder: required to place the content under the header */
-        Rectangle {
-            /* get default backbround. to support dark theme */
-            color: theme.palette.normal.background
-            width: units.gu(8)
-            height: units.gu(1)
-        }
+        anchors.horizontalCenter: parent.horizontalCenter
 
         Button {
             id: insertButton
             objectName: "Update"
             text: i18n.tr("Update")
             iconName: "save"
-            width: units.gu(12)
+            width: units.gu(14)
             onClicked: {
                 PopupUtils.open(confirmUpdateDialog,insertButton,{text: i18n.tr("Confirm the modifications")+" ?"})
             }

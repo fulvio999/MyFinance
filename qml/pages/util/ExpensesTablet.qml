@@ -70,7 +70,7 @@ Column {
         Label {
             id: currencyLabel
             anchors.verticalCenter: amountField.verticalCenter
-            text: categoryExpensePage.currentCurrency
+            text: manageCategoryExpensePage.currentCurrency
         }
 
         Label {
@@ -183,7 +183,7 @@ Column {
                 /* remove entry about a previously chosen subcategory an insert new ones */
                 modelListSubCategory.clear();
 
-                var subCat = Storage.getSubCategoryNameByCategoryId(categoryExpensePage.id);
+                var subCat = Storage.getSubCategoryNameByCategoryId(manageCategoryExpensePage.id);
 
                 for(var i =0;i < subCat.rows.length;i++){
                     modelListSubCategory.append(subCat.rows.item(i));
@@ -235,7 +235,7 @@ Column {
 
                         var idSubCategory = Storage.getSubCategoryIdByName(subCatChooserButton.text);
 
-                        Storage.insertExpense(categoryExpensePage.id, //idCategory
+                        Storage.insertExpense(manageCategoryExpensePage.id, //idCategory
                                               idSubCategory,
                                               amountField.text,
                                               expenseDateButton.text,
@@ -243,7 +243,7 @@ Column {
                                               );
 
                         /* update the current report tables */
-                        Storage.updateCategoryReportCurrentAmount(categoryExpensePage.id, amountField.text);
+                        Storage.updateCategoryReportCurrentAmount(manageCategoryExpensePage.id, amountField.text);
                         Storage.updateSubCategoryReportCurrentAmount(idSubCategory, amountField.text);
 
                         /* update category list shown with the new amount */
@@ -263,6 +263,7 @@ Column {
 
     Row{
         spacing: units.gu(2)
+        anchors.horizontalCenter: parent.horizontalCenter
 
         /* placeholder: required to place the content under the header */
         Rectangle {
@@ -322,11 +323,11 @@ Column {
             text: i18n.tr("Edit category...")
             width: units.gu(20)
             iconName: "edit"
-            onTriggered: adaptivePageLayout.addPageToNextColumn(categoryExpensePage, Qt.resolvedUrl("../CategoryEditPage.qml"),
+            onTriggered: adaptivePageLayout.addPageToNextColumn(manageCategoryExpensePage, Qt.resolvedUrl("../CategoryEditPage.qml"),
                                                                 {
                                                                     /* <page-variable-name>:<property-value-to-pass> */
-                                                                    categoryName:categoryExpensePage.categoryName,
-                                                                    categoryId:categoryExpensePage.id
+                                                                    categoryName:manageCategoryExpensePage.categoryName,
+                                                                    categoryId:manageCategoryExpensePage.id
                                                                 }
                                                                 )
         }
@@ -336,11 +337,11 @@ Column {
             text: i18n.tr("Find Expense...")
             width: units.gu(20)
             iconName: "find"
-            onClicked: adaptivePageLayout.addPageToNextColumn(categoryExpensePage, Qt.resolvedUrl("../FindExpensePage.qml"),
+            onClicked: adaptivePageLayout.addPageToNextColumn(manageCategoryExpensePage, Qt.resolvedUrl("../FindExpensePage.qml"),
                                                                 {
                                                                     /* <page-variable-name>:<property-value-to-pass> */
-                                                                    categoryName:categoryExpensePage.categoryName,
-                                                                    categoryId:categoryExpensePage.id
+                                                                    categoryName:manageCategoryExpensePage.categoryName,
+                                                                    categoryId:manageCategoryExpensePage.id
                                                                 }
                                                                 )
         }
@@ -352,11 +353,11 @@ Column {
             text: i18n.tr("Statistics")
             width: units.gu(12)
             color: UbuntuColors.orange
-            onClicked: adaptivePageLayout.addPageToNextColumn(categoryExpensePage, Qt.resolvedUrl("../StatisticsPage.qml"),
+            onClicked: adaptivePageLayout.addPageToNextColumn(manageCategoryExpensePage, Qt.resolvedUrl("../StatisticsPage.qml"),
                                                                 {
                                                                     /* <variable-name>:<property-value> */
-                                                                    categoryName:categoryExpensePage.categoryName,
-                                                                    categoryId:categoryExpensePage.id
+                                                                    categoryName:manageCategoryExpensePage.categoryName,
+                                                                    categoryId:manageCategoryExpensePage.id
                                                                 }
                                                                 )
 

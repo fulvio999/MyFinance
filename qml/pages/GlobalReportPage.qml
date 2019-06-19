@@ -19,7 +19,7 @@ import "./util"
 
 
 /*
-  Global Report Page: show reports by Category
+  Global Report Page: show reports for all the saved Category
 */
 Page {
      id: globalReportPage

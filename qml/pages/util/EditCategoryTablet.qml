@@ -341,19 +341,28 @@ Column {
            modal:true
            text:i18n.tr("Delete this Category with his subcategory and")+ "<b> "+i18n.tr("ALL")+"</b> "+i18n.tr("associated expense")+" ?"
 
+      Row{
+          anchors.horizontalCenter: parent.horizontalCenter
            Label{
                id:operationresultLabel
-               text: ""
+               text: " "
            }
+      }
+
+      Row{
+           spacing: units.gu(2)
+           anchors.horizontalCenter: parent.horizontalCenter
 
            Button {
                text: i18n.tr("Close")
+               width: units.gu(14)
                onClicked: PopupUtils.close(confirmDeleteCategory)
            }
 
            Button {
                id:deleteButton
                text: i18n.tr("Delete")
+               width: units.gu(14)
                color: UbuntuColors.red
                onClicked: {
 
@@ -382,6 +391,8 @@ Column {
                       settings.defaultDataAlreadyImported = false
                }
            }
+
+          }
        }
    }
 
