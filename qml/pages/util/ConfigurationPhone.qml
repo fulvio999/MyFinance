@@ -352,7 +352,7 @@ Column{
     Row{
         anchors.horizontalCenter: parent.horizontalCenter
         Label {
-            id: fieldRequiredLabel            
+            id: fieldRequiredLabel
             text: "* "+i18n.tr("Field required")
         }
     }
@@ -367,6 +367,13 @@ Column{
          id: popoverSubCategoryPickerComponent
          Dialog {
              id: categoryPickerDialog
+             title: i18n.tr("Select the Category")
+             text: i18n.tr("Item found")+": "+reportCategoryListModel.count
+
+             Component.onCompleted: {
+                 if(reportCategoryListModel.count === 0)
+                    confirmButton.enabled=false
+             }
 
              OptionSelector {
                  id: categoryOptionSelector
@@ -381,6 +388,7 @@ Column{
                  anchors.horizontalCenter: parent.horizontalCenter
 
                  Button {
+                     id: confirmButton
                      text: i18n.tr("Confirm")
                      width: units.gu(14)
                      onClicked: {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myfinance.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-19 14:21+0000\n"
+"POT-Creation-Date: 2019-06-19 15:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,12 +40,12 @@ msgid "Date To"
 msgstr ""
 
 #: ../qml/ReportSelectorForm.qml:135 ../qml/ReportSelectorForm.qml:168
-#: ../qml/pages/util/AppConfigurationPhone.qml:384
+#: ../qml/pages/util/ConfigurationPhone.qml:392
+#: ../qml/pages/util/ConfigurationTablet.qml:378
 #: ../qml/pages/util/SubCategoryReportTablet.qml:229
 #: ../qml/pages/util/GlobalReportPhone.qml:223
 #: ../qml/pages/util/SubCategoryReportPhone.qml:222
 #: ../qml/pages/util/GlobalReportTablet.qml:230
-#: ../qml/pages/util/AppConfigurationTablet.qml:370
 msgid "Confirm"
 msgstr ""
 
@@ -99,10 +99,11 @@ msgstr ""
 #: ../qml/dialogs/OperationFailSubCategory.qml:21
 #: ../qml/dialogs/OperationSuccessResult.qml:19
 #: ../qml/dialogs/ImportDataAlreadyDone.qml:19 ../qml/AboutProduct.qml:13
-#: ../qml/DataBaseEraser.qml:30 ../qml/pages/util/AppConfigurationPhone.qml:395
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:53
+#: ../qml/DataBaseEraser.qml:30 ../qml/pages/util/ExpenseFoundDelegate.qml:53
 #: ../qml/pages/util/FindExpenseTablet.qml:168
 #: ../qml/pages/util/ExpensesPhone.qml:161
+#: ../qml/pages/util/ConfigurationPhone.qml:403
+#: ../qml/pages/util/ConfigurationTablet.qml:389
 #: ../qml/pages/util/SubCategoryReportTablet.qml:251
 #: ../qml/pages/util/AddCategoryTablet.qml:209
 #: ../qml/pages/util/EditCategoryTablet.qml:187
@@ -116,7 +117,6 @@ msgstr ""
 #: ../qml/pages/util/GlobalReportTablet.qml:253
 #: ../qml/pages/util/FindExpensePhone.qml:187
 #: ../qml/pages/util/AddCategoryPhone.qml:211
-#: ../qml/pages/util/AppConfigurationTablet.qml:381
 msgid "Close"
 msgstr ""
 
@@ -168,11 +168,11 @@ msgstr ""
 msgid "(there is no restore)"
 msgstr ""
 
-#: ../qml/DataBaseEraser.qml:37 ../qml/pages/util/AppConfigurationPhone.qml:316
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:59
+#: ../qml/DataBaseEraser.qml:37 ../qml/pages/util/ExpenseFoundDelegate.qml:59
+#: ../qml/pages/util/ConfigurationPhone.qml:316
+#: ../qml/pages/util/ConfigurationTablet.qml:303
 #: ../qml/pages/util/EditCategoryTablet.qml:364
 #: ../qml/pages/util/EditCategoryPhone.qml:362
-#: ../qml/pages/util/AppConfigurationTablet.qml:303
 #: ../qml/pages/CategoryListPage.qml:54
 msgid "Delete"
 msgstr ""
@@ -189,9 +189,10 @@ msgstr ""
 msgid "Find Expense for category"
 msgstr ""
 
-#: ../qml/pages/util/AppConfigurationPhone.qml:54
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:42
 #: ../qml/pages/util/ExpensesPhone.qml:230
+#: ../qml/pages/util/ConfigurationPhone.qml:54
+#: ../qml/pages/util/ConfigurationTablet.qml:53
 #: ../qml/pages/util/AddCategoryTablet.qml:295
 #: ../qml/pages/util/EditCategoryTablet.qml:265
 #: ../qml/pages/util/EditCategoryTablet.qml:340
@@ -200,126 +201,7 @@ msgstr ""
 #: ../qml/pages/util/EditCategoryPhone.qml:338
 #: ../qml/pages/util/EditExpenseTablet.qml:152
 #: ../qml/pages/util/ExpensesTablet.qml:223
-#: ../qml/pages/util/AppConfigurationTablet.qml:53
 msgid "Confirmation"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:56
-msgid "Remove Expenses in the range (no restore)"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:65
-#: ../qml/pages/util/ExpensesPhone.qml:234
-#: ../qml/pages/util/AddCategoryTablet.qml:303
-#: ../qml/pages/util/EditCategoryTablet.qml:269
-#: ../qml/pages/util/EditExpensePhone.qml:164
-#: ../qml/pages/util/EditCategoryPhone.qml:266
-#: ../qml/pages/util/EditExpenseTablet.qml:156
-#: ../qml/pages/util/ExpensesTablet.qml:227
-#: ../qml/pages/util/AddCategoryPhone.qml:307
-#: ../qml/pages/util/AppConfigurationTablet.qml:64
-msgid "Cancel"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:71
-#: ../qml/pages/util/ExpensesPhone.qml:239
-#: ../qml/pages/util/EditExpensePhone.qml:169
-#: ../qml/pages/util/EditExpenseTablet.qml:161
-#: ../qml/pages/util/ExpensesTablet.qml:232
-#: ../qml/pages/util/AppConfigurationTablet.qml:70
-msgid "Execute"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:78
-#: ../qml/pages/util/AppConfigurationTablet.qml:77
-msgid "Done, deleted"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:78
-msgid "expense(s)"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:98
-msgid "GENERAL SETTINGS (** Restart is required after update ** )"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:110
-#: ../qml/pages/util/AppConfigurationTablet.qml:108
-msgid "Currency (ISO format)"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:126
-#: ../qml/pages/util/EditExpensePhone.qml:220
-#: ../qml/pages/util/EditExpenseTablet.qml:206
-#: ../qml/pages/util/AppConfigurationTablet.qml:124
-msgid "Update"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:154
-#: ../qml/pages/util/AppConfigurationTablet.qml:152
-msgid "Load default category and SubCategory"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:165
-#: ../qml/pages/util/AppConfigurationTablet.qml:158
-msgid "Load Data"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:194
-msgid "MAINTENANCE:"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:194
-msgid "Remove expences for a category and subCategory"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:194
-msgid "There is NO restore !"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:207
-#: ../qml/pages/util/SubCategoryReportTablet.qml:186
-#: ../qml/pages/util/AppConfigurationTablet.qml:203
-msgid "From"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:253
-#: ../qml/pages/util/SubCategoryReportTablet.qml:206
-#: ../qml/pages/util/AppConfigurationTablet.qml:244
-msgid "To"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:293
-#: ../qml/pages/util/ExpenseFoundDelegate.qml:139
-#: ../qml/pages/util/AppConfigurationTablet.qml:280
-msgid "Category"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:298
-#: ../qml/pages/util/AppConfigurationPhone.qml:322
-#: ../qml/pages/util/ExpensesPhone.qml:186
-#: ../qml/pages/util/ExpensesPhone.qml:262
-#: ../qml/pages/util/ExpensesPhone.qml:292
-#: ../qml/pages/util/ExpensesTablet.qml:180
-#: ../qml/pages/util/ExpensesTablet.qml:255
-#: ../qml/pages/util/ExpensesTablet.qml:285
-#: ../qml/pages/util/AppConfigurationTablet.qml:285
-#: ../qml/pages/util/AppConfigurationTablet.qml:309
-msgid "Choose..."
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:345
-#: ../qml/pages/util/AppConfigurationTablet.qml:331
-msgid "Help"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationPhone.qml:356
-#: ../qml/pages/util/ExpensesPhone.qml:303
-#: ../qml/pages/util/AddCategoryTablet.qml:236
-#: ../qml/pages/util/ExpensesTablet.qml:296
-#: ../qml/pages/util/AddCategoryPhone.qml:240
-#: ../qml/pages/util/AppConfigurationTablet.qml:342
-msgid "Field required"
 msgstr ""
 
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:44
@@ -351,6 +233,12 @@ msgstr ""
 #: ../qml/pages/util/EditExpenseTablet.qml:132
 #: ../qml/pages/util/ExpensesTablet.qml:204
 msgid "Note"
+msgstr ""
+
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:139
+#: ../qml/pages/util/ConfigurationPhone.qml:293
+#: ../qml/pages/util/ConfigurationTablet.qml:280
+msgid "Category"
 msgstr ""
 
 #: ../qml/pages/util/ExpenseFoundDelegate.qml:144
@@ -403,6 +291,41 @@ msgstr ""
 msgid "Amount:"
 msgstr ""
 
+#: ../qml/pages/util/ExpensesPhone.qml:186
+#: ../qml/pages/util/ExpensesPhone.qml:262
+#: ../qml/pages/util/ExpensesPhone.qml:292
+#: ../qml/pages/util/ConfigurationPhone.qml:298
+#: ../qml/pages/util/ConfigurationPhone.qml:322
+#: ../qml/pages/util/ConfigurationTablet.qml:285
+#: ../qml/pages/util/ConfigurationTablet.qml:309
+#: ../qml/pages/util/ExpensesTablet.qml:180
+#: ../qml/pages/util/ExpensesTablet.qml:255
+#: ../qml/pages/util/ExpensesTablet.qml:285
+msgid "Choose..."
+msgstr ""
+
+#: ../qml/pages/util/ExpensesPhone.qml:234
+#: ../qml/pages/util/ConfigurationPhone.qml:65
+#: ../qml/pages/util/ConfigurationTablet.qml:64
+#: ../qml/pages/util/AddCategoryTablet.qml:303
+#: ../qml/pages/util/EditCategoryTablet.qml:269
+#: ../qml/pages/util/EditExpensePhone.qml:164
+#: ../qml/pages/util/EditCategoryPhone.qml:266
+#: ../qml/pages/util/EditExpenseTablet.qml:156
+#: ../qml/pages/util/ExpensesTablet.qml:227
+#: ../qml/pages/util/AddCategoryPhone.qml:307
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/pages/util/ExpensesPhone.qml:239
+#: ../qml/pages/util/ConfigurationPhone.qml:71
+#: ../qml/pages/util/ConfigurationTablet.qml:70
+#: ../qml/pages/util/EditExpensePhone.qml:169
+#: ../qml/pages/util/EditExpenseTablet.qml:161
+#: ../qml/pages/util/ExpensesTablet.qml:232
+msgid "Execute"
+msgstr ""
+
 #: ../qml/pages/util/ExpensesPhone.qml:286
 msgid "Insert expense"
 msgstr ""
@@ -410,6 +333,15 @@ msgstr ""
 #: ../qml/pages/util/ExpensesPhone.qml:294
 #: ../qml/pages/util/ExpensesTablet.qml:287
 msgid "Confirm the insertion"
+msgstr ""
+
+#: ../qml/pages/util/ExpensesPhone.qml:303
+#: ../qml/pages/util/ConfigurationPhone.qml:356
+#: ../qml/pages/util/ConfigurationTablet.qml:342
+#: ../qml/pages/util/AddCategoryTablet.qml:236
+#: ../qml/pages/util/ExpensesTablet.qml:296
+#: ../qml/pages/util/AddCategoryPhone.qml:240
+msgid "Field required"
 msgstr ""
 
 #: ../qml/pages/util/ExpensesPhone.qml:324
@@ -423,6 +355,101 @@ msgstr ""
 
 #: ../qml/pages/util/ExpensesPhone.qml:353
 msgid "Find Expense"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:56
+msgid "Remove Expenses in the range (no restore)"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:78
+#: ../qml/pages/util/ConfigurationTablet.qml:77
+msgid "Done, deleted"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:78
+msgid "expense(s)"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:98
+msgid "GENERAL SETTINGS (** Restart is required after update ** )"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:110
+#: ../qml/pages/util/ConfigurationTablet.qml:108
+msgid "Currency (ISO format)"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:126
+#: ../qml/pages/util/ConfigurationTablet.qml:124
+#: ../qml/pages/util/EditExpensePhone.qml:220
+#: ../qml/pages/util/EditExpenseTablet.qml:206
+msgid "Update"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:154
+#: ../qml/pages/util/ConfigurationTablet.qml:152
+msgid "Load default category and SubCategory"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:165
+#: ../qml/pages/util/ConfigurationTablet.qml:158
+msgid "Load Data"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "MAINTENANCE:"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "Remove expences for a category and subCategory"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "There is NO restore !"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:207
+#: ../qml/pages/util/ConfigurationTablet.qml:203
+#: ../qml/pages/util/SubCategoryReportTablet.qml:186
+msgid "From"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:253
+#: ../qml/pages/util/ConfigurationTablet.qml:244
+#: ../qml/pages/util/SubCategoryReportTablet.qml:206
+msgid "To"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:345
+#: ../qml/pages/util/ConfigurationTablet.qml:331
+msgid "Help"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:370
+#: ../qml/pages/util/ConfigurationTablet.qml:356
+msgid "Select the Category"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationPhone.qml:371
+#: ../qml/pages/util/ConfigurationTablet.qml:357
+msgid "Item found"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationTablet.qml:55
+msgid "Remove Expenses in the range (no restore) ?"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationTablet.qml:97
+msgid "GENERAL SETTINGS (** Restart required after update ** )"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationTablet.qml:191
+msgid "MAINTENANCE"
+msgstr ""
+
+#: ../qml/pages/util/ConfigurationTablet.qml:191
+msgid ""
+"Remove expences for a category (and his subCategory). There is NO restore !"
 msgstr ""
 
 #: ../qml/pages/util/SubCategoryReportTablet.qml:64
@@ -807,23 +834,6 @@ msgstr ""
 
 #: ../qml/pages/util/FindExpensePhone.qml:248
 msgid "expense in the date range"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationTablet.qml:55
-msgid "Remove Expenses in the range (no restore) ?"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationTablet.qml:97
-msgid "GENERAL SETTINGS (** Restart required after update ** )"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationTablet.qml:191
-msgid "MAINTENANCE"
-msgstr ""
-
-#: ../qml/pages/util/AppConfigurationTablet.qml:191
-msgid ""
-"Remove expences for a category (and his subCategory). There is NO restore !"
 msgstr ""
 
 #: ../qml/pages/HelpPageTablet.qml:55 ../qml/pages/HelpPagePhone.qml:55
