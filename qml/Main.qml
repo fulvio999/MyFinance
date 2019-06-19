@@ -46,12 +46,12 @@ MainView {
     //height: units.gu(111)
 
     //horizontal (rel)
-    //width: units.gu(100)
-    //height: units.gu(75)
+    width: units.gu(100)
+    height: units.gu(75)
 
     //Tablet horizontal
-    width: units.gu(128)
-    height: units.gu(80)
+    //width: units.gu(128)
+    //height: units.gu(80)
 
     //Tablet vertical
     //width: units.gu(80)
