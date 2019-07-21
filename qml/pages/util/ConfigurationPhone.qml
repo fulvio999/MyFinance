@@ -191,7 +191,7 @@ Column{
         spacing: units.gu(5)
 
         Label{
-            text: "<b>"+i18n.tr("MAINTENANCE:")+"</b>"+"  "+ i18n.tr("Remove expences for a category and subCategory")+"<br/>"+i18n.tr("There is NO restore !")
+            text: "<b>"+i18n.tr("MAINTENANCE:")+"</b>"+"  "+ i18n.tr("Remove expenses for a category and subCategory")+"<br/>"+i18n.tr("There is NO restore !")
             fontSize: "small"
         }
     }
