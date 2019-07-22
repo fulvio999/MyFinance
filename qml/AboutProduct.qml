@@ -8,7 +8,7 @@ import Ubuntu.Components.Popups 1.3
 Dialog {
        id: aboutDialogue
        title: i18n.tr("Product Info")
-       text: "MyFinance: "+ i18n.tr("version")+ "1.2.1 <br>"+ i18n.tr("Author")+": "+"fulvio"
+       text: "MyFinance: "+ i18n.tr("version")+ "1.2.2 <br>"+ i18n.tr("Author")+": "+"fulvio"
        Button {
            text:  i18n.tr("Close")
            onClicked: PopupUtils.close(aboutDialogue)
