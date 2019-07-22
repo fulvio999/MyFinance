@@ -41,7 +41,7 @@ Component {
                 id: confirmDeleteExpense
                 title: i18n.tr("Confirmation")
                 modal:true
-                text: i18n.tr("Delete selected Expsense")+" ?"
+                text: i18n.tr("Delete selected Expense")+" ?"
 
                 Label{
                     id: deleteSuccessLabel
