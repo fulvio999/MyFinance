@@ -1,0 +1,966 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the myfinance.fulvio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: myfinance.fulvio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 15:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: NORWEGIAN <LL@li.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/dialogs/OperationFailInsertExpense.qml:9
+#: ../qml/dialogs/OperationSuccessResultRestart.qml:9
+#: ../qml/dialogs/OperationSuccessResult.qml:11
+#: ../qml/dialogs/OperationFailSubCategory.qml:12
+#: ../qml/pages/util/InvalidInputPopUp.qml:9 ../qml/ItemNotFound.qml:8
+msgid "Operation Result"
+msgstr "Driftsresultat"
+
+#: ../qml/dialogs/OperationFailInsertExpense.qml:14
+msgid "Missing required value, or invalid 'Amount'"
+msgstr "Mangler nødvendig verdi, eller ugyldig 'Beløp'"
+
+#: ../qml/dialogs/OperationFailInsertExpense.qml:14
+msgid "Note: decimal separator is . "
+msgstr "Merk: desimal skilletegn er ."
+
+#: ../qml/dialogs/OperationSuccessResultRestart.qml:12
+#: ../qml/pages/util/EditExpenseTablet.qml:41
+#: ../qml/pages/util/EditExpensePhone.qml:41
+msgid "Operation executed successfully"
+msgstr "Operasjonen ble utført vellykket"
+
+#: ../qml/dialogs/OperationSuccessResultRestart.qml:12
+msgid "PLEASE, A RESTART IS REQUIRED"
+msgstr "VENNLIGST, EN OMSTART KREVES"
+
+#: ../qml/dialogs/OperationSuccessResult.qml:14
+msgid "OK"
+msgstr "OK"
+
+#: ../qml/dialogs/OperationSuccessResult.qml:19
+#: ../qml/dialogs/ImportDataAlreadyDone.qml:19
+#: ../qml/dialogs/OperationFailSubCategory.qml:21 ../qml/DataBaseEraser.qml:30
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:53
+#: ../qml/pages/util/ExpensesTablet.qml:156
+#: ../qml/pages/util/SubCategoryReportTablet.qml:251
+#: ../qml/pages/util/InvalidInputPopUp.qml:17
+#: ../qml/pages/util/AddCategoryPhone.qml:211
+#: ../qml/pages/util/GlobalReportPhone.qml:246
+#: ../qml/pages/util/GlobalReportTablet.qml:253
+#: ../qml/pages/util/ConfigurationTablet.qml:389
+#: ../qml/pages/util/AddCategoryTablet.qml:209
+#: ../qml/pages/util/EditCategoryTablet.qml:187
+#: ../qml/pages/util/EditCategoryTablet.qml:357
+#: ../qml/pages/util/FindExpenseTablet.qml:168
+#: ../qml/pages/util/EditCategoryPhone.qml:191
+#: ../qml/pages/util/EditCategoryPhone.qml:355
+#: ../qml/pages/util/ExpensesPhone.qml:161
+#: ../qml/pages/util/SubCategoryReportPhone.qml:244
+#: ../qml/pages/util/FindExpensePhone.qml:187
+#: ../qml/pages/util/ConfigurationPhone.qml:403 ../qml/AboutProduct.qml:13
+msgid "Close"
+msgstr "Lukk"
+
+#: ../qml/dialogs/ImportDataAlreadyDone.qml:9
+#: ../qml/dialogs/OperationFailSubCategory.qml:16
+msgid "Attention"
+msgstr "Merk følgende"
+
+#: ../qml/dialogs/ImportDataAlreadyDone.qml:13
+msgid "Data already loaded, can't redo it"
+msgstr "Data allerede lastet, kan ikke angre"
+
+#: ../qml/dialogs/OperationStatusDialog.qml:19
+msgid "Informations"
+msgstr "Informasjoner"
+
+#: ../qml/dialogs/OperationStatusDialog.qml:35
+msgid "* Database created: OK"
+msgstr "* Database opprettet: OK"
+
+#: ../qml/dialogs/OperationStatusDialog.qml:35
+msgid "* Default data imported: OK"
+msgstr "* Standarddata importert: OK"
+
+#: ../qml/dialogs/OperationStatusDialog.qml:35
+msgid "* Currency set to: "
+msgstr "* Valuta satt til: "
+
+#: ../qml/dialogs/OperationStatusDialog.qml:35
+msgid "Use configuration menu to change default settings"
+msgstr "Bruk konfigurasjonsmenyen til å endre standardinnstillinger"
+
+#: ../qml/DataBaseEraser.qml:13
+msgid "Remove ALL Database Contents"
+msgstr "Fjern ALT databaseinnhold"
+
+#: ../qml/DataBaseEraser.qml:13
+msgid "(there is no restore)"
+msgstr "(det er ingen gjenoppretting)"
+
+#: ../qml/DataBaseEraser.qml:37 ../qml/pages/util/ExpenseFoundDelegate.qml:59
+#: ../qml/pages/util/ConfigurationTablet.qml:303
+#: ../qml/pages/util/EditCategoryTablet.qml:364
+#: ../qml/pages/util/EditCategoryPhone.qml:362
+#: ../qml/pages/util/ConfigurationPhone.qml:316
+#: ../qml/pages/CategoryListPage.qml:54
+msgid "Delete"
+msgstr "Slett"
+
+#: ../qml/DataBaseEraser.qml:44
+msgid "Succesfully Removed ALL data"
+msgstr "Fjernet ALLE data"
+
+#: ../qml/pages/HelpPage.qml:17
+msgid "Help Page"
+msgstr "Hjelpeside"
+
+#: ../qml/pages/HelpPagePhone.qml:55 ../qml/pages/HelpPageTablet.qml:55
+msgid "Application Help Page"
+msgstr "Applikasjon hjelpeside"
+
+#: ../qml/pages/HelpPagePhone.qml:69 ../qml/pages/HelpPageTablet.qml:69
+msgid "MyFinance is a simple expenses manager/tracker"
+msgstr "MinFinans er en enkel utgiftshåndterer/sporer"
+
+#: ../qml/pages/HelpPagePhone.qml:71 ../qml/pages/HelpPageTablet.qml:71
+msgid ""
+"Is based on the concept of 'Category' of expense (example: Travel, "
+"Home, ....) and his subCategory to define a classification"
+msgstr ""
+"Er basert på begrepet 'Kategori' av utgifter (eksempel: Reise, "
+"Hjem, ....) og dets underkategori for å definere en klassifisering"
+
+#: ../qml/pages/HelpPagePhone.qml:73 ../qml/pages/HelpPageTablet.qml:73
+msgid "(example: plane,train,car for 'Travel' category)"
+msgstr "(eksempel: fly, tog, bil for kategorien 'Reise')"
+
+#: ../qml/pages/HelpPagePhone.qml:75 ../qml/pages/HelpPageTablet.qml:75
+msgid "Users can add custom category and subCategory or edit the default ones"
+msgstr "Brukere kan legge til tilpasset kategori, underkategori eller redigere standardkategoriene"
+
+#: ../qml/pages/HelpPagePhone.qml:77 ../qml/pages/HelpPageTablet.qml:77
+msgid ""
+"The default currency is set to EUR, but can be changed in the configuration "
+"page"
+msgstr ""
+"Standardvalutaen er satt til EUR, men kan endres på konfigurasjons-"
+"siden"
+
+#: ../qml/pages/HelpPagePhone.qml:80 ../qml/pages/HelpPageTablet.qml:80
+msgid ""
+"NOTE: Currency values, MUST be in ISO format (3 letters, example: EUR,USD)"
+msgstr ""
+"MERK: Valutaverdier, MÅ være i ISO-format (3 bokstaver, eksempel: EUR, USD)"
+
+#: ../qml/pages/HelpPagePhone.qml:82 ../qml/pages/HelpPageTablet.qml:82
+msgid "See"
+msgstr "Se"
+
+#: ../qml/pages/HelpPagePhone.qml:82 ../qml/pages/HelpPageTablet.qml:82
+msgid "<a href=\"%1\">http://www.xe.com/iso4217.php</a>"
+msgstr "<a href=\"%1\">http://www.xe.com/iso4217.php</a>"
+
+#: ../qml/pages/HelpPagePhone.qml:84 ../qml/pages/HelpPageTablet.qml:84
+msgid "After his modification, restart the application !"
+msgstr "Start applikasjonen på nytt etter endringen !"
+
+#: ../qml/pages/HelpPagePhone.qml:87 ../qml/pages/HelpPageTablet.qml:87
+msgid "Reports types"
+msgstr "Rapporttyper"
+
+#: ../qml/pages/HelpPagePhone.qml:89 ../qml/pages/HelpPageTablet.qml:89
+msgid "There are two type of report"
+msgstr "Det er to typer rapporter"
+
+#: ../qml/pages/HelpPagePhone.qml:90 ../qml/pages/HelpPageTablet.qml:90
+msgid ""
+"Instant Report: a progressive report that show the expense from the begin at "
+"today"
+msgstr ""
+"Øyeblikkelig rapport: En progressiv rapport som viser utgiften med oppstart "
+"i dag"
+
+#: ../qml/pages/HelpPagePhone.qml:92 ../qml/pages/HelpPageTablet.qml:92
+msgid ""
+"History Report: expenses situation for the last month or for a custom period"
+msgstr ""
+"Historikkrapport: Utgiftssituasjon for den siste måneden eller for en tilpasset periode"
+
+#: ../qml/pages/ManageCategoryExpensePage.qml:39
+msgid "Manage expenses for"
+msgstr "Administrer utgifter for"
+
+#: ../qml/pages/StatisticsPage.qml:28
+msgid "Statistics for category"
+msgstr "Statistikker for kategori"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:52
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:124
+#: ../qml/pages/util/ExpensesTablet.qml:58
+#: ../qml/pages/util/EditExpensePhone.qml:52
+msgid "Amount"
+msgstr "Beløp"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:74
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:129
+#: ../qml/pages/util/ExpensesTablet.qml:79
+#: ../qml/pages/util/EditExpensePhone.qml:78
+#: ../qml/pages/util/ExpensesPhone.qml:84
+msgid "Date"
+msgstr "Dato"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:115
+#: ../qml/pages/util/ExpensesTablet.qml:174
+msgid "Sub Category"
+msgstr "Underkategori"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:132
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:134
+#: ../qml/pages/util/ExpensesTablet.qml:204
+#: ../qml/pages/util/EditExpensePhone.qml:140
+#: ../qml/pages/util/ExpensesPhone.qml:211
+msgid "Note"
+msgstr "Notat"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:152
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:42
+#: ../qml/pages/util/ExpensesTablet.qml:223
+#: ../qml/pages/util/EditExpensePhone.qml:160
+#: ../qml/pages/util/ConfigurationTablet.qml:53
+#: ../qml/pages/util/AddCategoryTablet.qml:295
+#: ../qml/pages/util/EditCategoryTablet.qml:265
+#: ../qml/pages/util/EditCategoryTablet.qml:340
+#: ../qml/pages/util/EditCategoryPhone.qml:262
+#: ../qml/pages/util/EditCategoryPhone.qml:338
+#: ../qml/pages/util/ExpensesPhone.qml:230
+#: ../qml/pages/util/ConfigurationPhone.qml:54
+msgid "Confirmation"
+msgstr "Bekreftelse"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:156
+#: ../qml/pages/util/ExpensesTablet.qml:227
+#: ../qml/pages/util/AddCategoryPhone.qml:307
+#: ../qml/pages/util/EditExpensePhone.qml:164
+#: ../qml/pages/util/ConfigurationTablet.qml:64
+#: ../qml/pages/util/AddCategoryTablet.qml:303
+#: ../qml/pages/util/EditCategoryTablet.qml:269
+#: ../qml/pages/util/EditCategoryPhone.qml:266
+#: ../qml/pages/util/ExpensesPhone.qml:234
+#: ../qml/pages/util/ConfigurationPhone.qml:65
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:161
+#: ../qml/pages/util/ExpensesTablet.qml:232
+#: ../qml/pages/util/EditExpensePhone.qml:169
+#: ../qml/pages/util/ConfigurationTablet.qml:70
+#: ../qml/pages/util/ExpensesPhone.qml:239
+#: ../qml/pages/util/ConfigurationPhone.qml:71
+msgid "Execute"
+msgstr "Utført"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:206
+#: ../qml/pages/util/EditExpensePhone.qml:220
+#: ../qml/pages/util/ConfigurationTablet.qml:124
+#: ../qml/pages/util/ConfigurationPhone.qml:126
+msgid "Update"
+msgstr "Oppdater"
+
+#: ../qml/pages/util/EditExpenseTablet.qml:210
+#: ../qml/pages/util/EditExpensePhone.qml:224
+msgid "Confirm the modifications"
+msgstr "Bekreft endringene"
+
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:44
+msgid "Delete selected Expense"
+msgstr "Slett valgt utgift"
+
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:92
+msgid "OK: Done, Reload the expense List"
+msgstr "OK: Ferdig, last utgiftslisten på nytt"
+
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:139
+#: ../qml/pages/util/ConfigurationTablet.qml:280
+#: ../qml/pages/util/ConfigurationPhone.qml:293
+msgid "Category"
+msgstr "Kategori"
+
+#: ../qml/pages/util/ExpenseFoundDelegate.qml:144
+#: ../qml/pages/util/ExpensesTablet.qml:129
+#: ../qml/pages/util/EditExpensePhone.qml:123
+#: ../qml/pages/util/FindExpenseTablet.qml:142
+#: ../qml/pages/util/ExpensesPhone.qml:134
+#: ../qml/pages/util/ExpensesPhone.qml:181
+#: ../qml/pages/util/FindExpensePhone.qml:161
+msgid "SubCategory"
+msgstr "Underkategori"
+
+#: ../qml/pages/util/ExpensesTablet.qml:47
+#: ../qml/pages/util/ExpensesPhone.qml:46
+msgid "Amount inserted successfully"
+msgstr "Vellykket registrering av beløp"
+
+#: ../qml/pages/util/ExpensesTablet.qml:129
+#: ../qml/pages/util/FindExpenseTablet.qml:142
+#: ../qml/pages/util/ExpensesPhone.qml:134
+#: ../qml/pages/util/FindExpensePhone.qml:161
+msgid "found"
+msgstr "funnet"
+
+#: ../qml/pages/util/ExpensesTablet.qml:144
+#: ../qml/pages/util/FindExpenseTablet.qml:156
+#: ../qml/pages/util/ExpensesPhone.qml:149
+#: ../qml/pages/util/FindExpensePhone.qml:175
+msgid "Select"
+msgstr "Velg"
+
+#: ../qml/pages/util/ExpensesTablet.qml:180
+#: ../qml/pages/util/ExpensesTablet.qml:255
+#: ../qml/pages/util/ExpensesTablet.qml:285
+#: ../qml/pages/util/ConfigurationTablet.qml:285
+#: ../qml/pages/util/ConfigurationTablet.qml:309
+#: ../qml/pages/util/ExpensesPhone.qml:186
+#: ../qml/pages/util/ExpensesPhone.qml:262
+#: ../qml/pages/util/ExpensesPhone.qml:292
+#: ../qml/pages/util/ConfigurationPhone.qml:298
+#: ../qml/pages/util/ConfigurationPhone.qml:322
+msgid "Choose..."
+msgstr "Velg..."
+
+#: ../qml/pages/util/ExpensesTablet.qml:279
+msgid "Insert"
+msgstr "Sett inn"
+
+#: ../qml/pages/util/ExpensesTablet.qml:287
+#: ../qml/pages/util/ExpensesPhone.qml:294
+msgid "Confirm the insertion"
+msgstr "Bekreft innsetting"
+
+#: ../qml/pages/util/ExpensesTablet.qml:296
+#: ../qml/pages/util/AddCategoryPhone.qml:240
+#: ../qml/pages/util/ConfigurationTablet.qml:342
+#: ../qml/pages/util/AddCategoryTablet.qml:236
+#: ../qml/pages/util/ExpensesPhone.qml:303
+#: ../qml/pages/util/ConfigurationPhone.qml:356
+msgid "Field required"
+msgstr "Felt påkrevd"
+
+#: ../qml/pages/util/ExpensesTablet.qml:323
+msgid "Edit category..."
+msgstr "Rediger kategori..."
+
+#: ../qml/pages/util/ExpensesTablet.qml:337
+msgid "Find Expense..."
+msgstr "Finn utgift"
+
+#: ../qml/pages/util/ExpensesTablet.qml:353
+#: ../qml/pages/util/ExpensesPhone.qml:324
+msgid "Statistics"
+msgstr "Statistikker"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:64
+#: ../qml/pages/util/GlobalReportPhone.qml:52
+#: ../qml/pages/util/GlobalReportTablet.qml:52
+#: ../qml/pages/util/SubCategoryReportPhone.qml:61
+msgid "Instant Report"
+msgstr "Øyeblikksrapport"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:64
+#: ../qml/pages/util/SubCategoryReportPhone.qml:61
+msgid "subcategory expenses at current date"
+msgstr "underkategoriutgifter på nåværende dato"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:65
+#: ../qml/pages/util/GlobalReportPhone.qml:53
+#: ../qml/pages/util/GlobalReportTablet.qml:53
+#: ../qml/pages/util/SubCategoryReportPhone.qml:62
+msgid "Last Month Report"
+msgstr "Siste månedsrapport"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:65
+#: ../qml/pages/util/SubCategoryReportPhone.qml:62
+msgid "subcategory expenses in the last month"
+msgstr "underkategoriutgifter den siste måneden"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:66
+#: ../qml/pages/util/GlobalReportPhone.qml:54
+#: ../qml/pages/util/GlobalReportTablet.qml:54
+#: ../qml/pages/util/SubCategoryReportPhone.qml:63
+msgid "Custom Report"
+msgstr "Tilpasset rapport"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:66
+#: ../qml/pages/util/SubCategoryReportPhone.qml:63
+msgid "subcategory expenses in a custom range"
+msgstr "underkategoriutgifter i et datointervall"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:82
+msgid "Available Report"
+msgstr "Tilgjengelig rapport"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:119
+#: ../qml/pages/util/GlobalReportPhone.qml:106
+#: ../qml/pages/util/GlobalReportTablet.qml:108
+#: ../qml/pages/util/SubCategoryReportPhone.qml:115
+msgid "Show/Refresh"
+msgstr "Vis/oppfrisk"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:131
+#: ../qml/pages/util/GlobalReportPhone.qml:126
+#: ../qml/pages/util/GlobalReportTablet.qml:128
+#: ../qml/pages/util/SubCategoryReportPhone.qml:127
+msgid "Situation at"
+msgstr "Situasjon kl"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:131
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:117
+#: ../qml/pages/util/GlobalReportTablet.qml:128
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:153
+#: ../qml/pages/util/GlobalReportTablet.qml:237
+#: ../qml/pages/util/GlobalReportTablet.qml:242
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:150
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+msgid "(date format is yyyy-mm-dd)"
+msgstr "(datoformat er åååå-mm-dd)"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:115
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:117
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:242
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+msgid "NO DATA FOUND"
+msgstr "INGEN DATA FUNNET"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/GlobalReportPhone.qml:141
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+msgid "for Monthly report from"
+msgstr "for månedsrapport fra"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:144
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:143
+#: ../qml/pages/util/GlobalReportTablet.qml:153
+#: ../qml/pages/util/GlobalReportTablet.qml:237
+#: ../qml/pages/util/GlobalReportTablet.qml:242
+#: ../qml/pages/util/SubCategoryReportPhone.qml:140
+#: ../qml/pages/util/SubCategoryReportPhone.qml:150
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+msgid "to"
+msgstr "til"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:154
+#: ../qml/pages/util/GlobalReportPhone.qml:151
+#: ../qml/pages/util/GlobalReportTablet.qml:153
+msgid "Monthly report from"
+msgstr "Månedsrapport fra"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:186
+#: ../qml/pages/util/ConfigurationTablet.qml:203
+#: ../qml/pages/util/ConfigurationPhone.qml:207
+msgid "From"
+msgstr "Fra"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:206
+#: ../qml/pages/util/ConfigurationTablet.qml:244
+#: ../qml/pages/util/ConfigurationPhone.qml:253
+msgid "To"
+msgstr "Til"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:229
+#: ../qml/pages/util/GlobalReportPhone.qml:223
+#: ../qml/pages/util/GlobalReportTablet.qml:230
+#: ../qml/pages/util/ConfigurationTablet.qml:378
+#: ../qml/pages/util/SubCategoryReportPhone.qml:222
+#: ../qml/pages/util/ConfigurationPhone.qml:392
+#: ../qml/ReportSelectorForm.qml:135 ../qml/ReportSelectorForm.qml:168
+msgid "Confirm"
+msgstr "Bekreft"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:236
+#: ../qml/pages/util/GlobalReportPhone.qml:230
+#: ../qml/pages/util/GlobalReportTablet.qml:237
+msgid "Custom report from"
+msgstr "Tilpasset rapport fra"
+
+#: ../qml/pages/util/SubCategoryReportTablet.qml:242
+#: ../qml/pages/util/GlobalReportPhone.qml:235
+#: ../qml/pages/util/GlobalReportTablet.qml:242
+#: ../qml/pages/util/SubCategoryReportPhone.qml:235
+msgid "from"
+msgstr "fra"
+
+#: ../qml/pages/util/InvalidInputPopUp.qml:12
+msgid "Invalid input value(s)"
+msgstr "Ugyldig inngangsverdi(er)"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:42
+#: ../qml/pages/util/AddCategoryTablet.qml:43
+msgid "SubCategory added in list"
+msgstr "Underkategori lagt til i liste"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:47
+#: ../qml/pages/util/AddCategoryTablet.qml:48
+msgid "Category and SubCategory Saved"
+msgstr "Kategori og underkategori lagret"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:53
+#: ../qml/pages/util/AddCategoryTablet.qml:54
+msgid "Category value is invalid"
+msgstr "Kategoriverdi er ugyldig"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:58
+#: ../qml/pages/util/AddCategoryTablet.qml:59
+msgid "Category already Exist"
+msgstr "Kategori eksisterer allerede"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:63
+#: ../qml/pages/util/AddCategoryTablet.qml:64
+msgid "SUBCategory invalid or duplicated"
+msgstr "Underkategori ugyldig eller duplikat"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:68
+#: ../qml/pages/util/AddCategoryTablet.qml:69
+msgid "No SUBCategory found in List"
+msgstr "Ingen underkategori funnet i listen"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:79
+#: ../qml/pages/util/AddCategoryTablet.qml:81
+#: ../qml/pages/util/EditCategoryTablet.qml:55
+#: ../qml/pages/util/EditCategoryPhone.qml:55
+msgid "Category Name"
+msgstr "Kategori navn"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:98
+#: ../qml/pages/util/AddCategoryTablet.qml:100
+#: ../qml/pages/util/EditCategoryTablet.qml:74
+#: ../qml/pages/util/EditCategoryPhone.qml:74
+msgid "Add Subcategory"
+msgstr "Legg til underkategori"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:117
+#: ../qml/pages/util/AddCategoryTablet.qml:115
+#: ../qml/pages/util/EditCategoryTablet.qml:89
+#: ../qml/pages/util/EditCategoryPhone.qml:98
+msgid "Add to List"
+msgstr "Legg til liste"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:154
+#: ../qml/pages/util/AddCategoryTablet.qml:152
+msgid "Subcategory List"
+msgstr "Underkategoriliste"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:164
+#: ../qml/pages/util/AddCategoryTablet.qml:162
+#: ../qml/pages/util/EditCategoryTablet.qml:126
+#: ../qml/pages/util/EditCategoryPhone.qml:135
+msgid "Select the subcategory to remove"
+msgstr "Velg underkategorien som skal slettes"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:193
+#: ../qml/pages/util/AddCategoryTablet.qml:191
+#: ../qml/pages/util/EditCategoryTablet.qml:162
+#: ../qml/pages/util/EditCategoryPhone.qml:171
+msgid "Remove"
+msgstr "Slett"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:206
+#: ../qml/pages/util/AddCategoryTablet.qml:204
+#: ../qml/pages/util/EditCategoryTablet.qml:138
+#: ../qml/pages/util/EditCategoryTablet.qml:182
+#: ../qml/pages/util/EditCategoryPhone.qml:147
+#: ../qml/pages/util/EditCategoryPhone.qml:186
+msgid "Subcategories"
+msgstr "Underkategorier"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:228
+#: ../qml/pages/util/AddCategoryTablet.qml:226
+msgid "Edit..."
+msgstr "Rediger..."
+
+#: ../qml/pages/util/AddCategoryPhone.qml:268
+#: ../qml/pages/util/AddCategoryPhone.qml:313
+#: ../qml/pages/util/AddCategoryTablet.qml:264
+#: ../qml/pages/util/AddCategoryTablet.qml:309
+#: ../qml/pages/util/EditCategoryTablet.qml:229
+#: ../qml/pages/util/EditCategoryTablet.qml:274
+#: ../qml/pages/util/EditCategoryPhone.qml:226
+#: ../qml/pages/util/EditCategoryPhone.qml:271
+msgid "Save"
+msgstr "Lagre"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:279
+#: ../qml/pages/util/AddCategoryTablet.qml:275
+msgid "Reset All"
+msgstr "Nullstill alt"
+
+#: ../qml/pages/util/AddCategoryPhone.qml:300
+#: ../qml/pages/util/AddCategoryTablet.qml:296
+msgid "Save the new Category"
+msgstr "Lagre den nye kategorien"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:52
+#: ../qml/pages/util/GlobalReportTablet.qml:52
+msgid "expenses amount at current date"
+msgstr "utgiftsbeløp på nåværende dato"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:53
+#: ../qml/pages/util/GlobalReportTablet.qml:53
+msgid "expenses in the last month"
+msgstr "utgifter den siste måneden"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:54
+#: ../qml/pages/util/GlobalReportTablet.qml:54
+msgid "expenses in a custom range"
+msgstr "utgifter i et tilpasset utvalg"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:64
+msgid "Report Types"
+msgstr "Rapporttyper"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:115
+#: ../qml/pages/util/GlobalReportTablet.qml:117
+msgid "at"
+msgstr "kl"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:184
+#: ../qml/pages/util/GlobalReportTablet.qml:186
+#: ../qml/pages/util/SubCategoryReportPhone.qml:183
+msgid "From:"
+msgstr "Fra"
+
+#: ../qml/pages/util/GlobalReportPhone.qml:202
+#: ../qml/pages/util/GlobalReportTablet.qml:206
+#: ../qml/pages/util/SubCategoryReportPhone.qml:201
+msgid "To:"
+msgstr "Til"
+
+#: ../qml/pages/util/CategoryListDelegate.qml:72
+msgid "Expense (at "
+msgstr "Utgift (kl "
+
+#: ../qml/pages/util/GlobalReportTablet.qml:71
+msgid "Report Type"
+msgstr "Rapporttype"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:55
+msgid "Remove Expenses in the range (no restore) ?"
+msgstr "Fjern utgifter i intervallet (ingen gjenoppretting) ?"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:77
+#: ../qml/pages/util/ConfigurationPhone.qml:78
+msgid "Done, deleted"
+msgstr "Utført, slettet"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:97
+msgid "GENERAL SETTINGS (** Restart required after update ** )"
+msgstr "GENERELLE INNSTILLINGER (** Start på nytt etter oppdatering ** )"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:108
+#: ../qml/pages/util/ConfigurationPhone.qml:110
+msgid "Currency (ISO format)"
+msgstr "Valuta (ISO format)"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:152
+#: ../qml/pages/util/ConfigurationPhone.qml:154
+msgid "Load default category and SubCategory"
+msgstr "Last inn standardkategori og underkategori"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:158
+#: ../qml/pages/util/ConfigurationPhone.qml:165
+msgid "Load Data"
+msgstr "Last data"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:191
+msgid "MAINTENANCE"
+msgstr "VEDLIKEHOLD"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:191
+msgid ""
+"Remove expences for a category (and his subCategory). There is NO restore !"
+msgstr ""
+"Fjern utgiftene for en kategori (og dets underkategorier). Det er INGEN gjenoppretting !"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:331
+#: ../qml/pages/util/ConfigurationPhone.qml:345
+msgid "Help"
+msgstr "Hjelp"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:356
+#: ../qml/pages/util/ConfigurationPhone.qml:370
+msgid "Select the Category"
+msgstr "Velg kategorien"
+
+#: ../qml/pages/util/ConfigurationTablet.qml:357
+#: ../qml/pages/util/ConfigurationPhone.qml:371
+msgid "Item found"
+msgstr "Enhet funnet"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:38
+#: ../qml/pages/util/EditCategoryPhone.qml:38
+msgid "Operation executed successfully !"
+msgstr "Operasjon utført vellykket !"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:43
+#: ../qml/pages/util/EditCategoryPhone.qml:43
+msgid "SubCategory invalid or duplicated"
+msgstr "Underkategori ugyldig eller duplikat"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:116
+#: ../qml/pages/util/EditCategoryPhone.qml:125
+msgid "Subcategory"
+msgstr "Underkategori"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:179
+msgid "(Modified - NOT Saved)"
+msgstr "(Endret - IKKE lagret)"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:198
+#: ../qml/pages/util/EditCategoryPhone.qml:201
+msgid "Show/Edit..."
+msgstr "Vis/rediger..."
+
+#: ../qml/pages/util/EditCategoryTablet.qml:240
+#: ../qml/pages/util/EditCategoryPhone.qml:238
+msgid "Delete Category"
+msgstr "Slet kategori"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:253
+#: ../qml/pages/util/EditCategoryPhone.qml:250
+msgid "At the modifications end, press Save button"
+msgstr "Trykk på Lagre-knappen når endringene er utført"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:266
+#: ../qml/pages/util/EditCategoryPhone.qml:263
+msgid "Save Category modifications"
+msgstr "Lagre kategoriendringer"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:342
+#: ../qml/pages/util/EditCategoryPhone.qml:340
+msgid "Delete this Category with his subcategory and"
+msgstr "Slett denne kategorien med dets underkategorier og"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:342
+#: ../qml/pages/util/EditCategoryPhone.qml:340
+msgid "ALL"
+msgstr "ALLE"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:342
+msgid "associated expense"
+msgstr "tilhørende utgift"
+
+#: ../qml/pages/util/EditCategoryTablet.qml:381
+#: ../qml/pages/util/EditCategoryPhone.qml:379
+msgid "Operation Executed Successfully"
+msgstr "Operasjon utført vellykket"
+
+#: ../qml/pages/util/FindExpenseTablet.qml:53
+#: ../qml/pages/util/FindExpensePhone.qml:66 ../qml/ReportSelectorForm.qml:30
+msgid "Date from"
+msgstr "Dato fra"
+
+#: ../qml/pages/util/FindExpenseTablet.qml:94
+#: ../qml/pages/util/FindExpensePhone.qml:113 ../qml/ReportSelectorForm.qml:70
+msgid "Date To"
+msgstr "Dato til"
+
+#: ../qml/pages/util/FindExpenseTablet.qml:181
+#: ../qml/pages/util/FindExpensePhone.qml:205
+msgid "Filter"
+msgstr "Filter"
+
+#: ../qml/pages/util/FindExpenseTablet.qml:187
+#: ../qml/pages/util/FindExpenseTablet.qml:214
+#: ../qml/pages/util/FindExpensePhone.qml:210
+#: ../qml/pages/util/FindExpensePhone.qml:243
+msgid "All SubCategory"
+msgstr "Alle underkategorier"
+
+#: ../qml/pages/util/FindExpenseTablet.qml:208
+#: ../qml/pages/util/FindExpensePhone.qml:236
+msgid "Search/Reload"
+msgstr "Søk/oppfrisk"
+
+#: ../qml/pages/util/EditCategoryPhone.qml:340
+msgid "associated expense ?"
+msgstr "tilhørende utgift?"
+
+#: ../qml/pages/util/ExpensesPhone.qml:57
+msgid "Amount:"
+msgstr "Beløp"
+
+#: ../qml/pages/util/ExpensesPhone.qml:286
+msgid "Insert expense"
+msgstr "Sett inn utgift"
+
+#: ../qml/pages/util/ExpensesPhone.qml:339 ../qml/pages/CategoryEditPage.qml:52
+msgid "Edit category"
+msgstr "Rediger kategori"
+
+#: ../qml/pages/util/ExpensesPhone.qml:353
+msgid "Find Expense"
+msgstr "Finn utgift"
+
+#: ../qml/pages/util/SubCategoryReportPhone.qml:73
+msgid "Available Reports"
+msgstr "Tilgjengelige rapporter"
+
+#: ../qml/pages/util/SubCategoryReportPhone.qml:229
+msgid "Custom report from: "
+msgstr "Tilpasset rapport fra"
+
+#: ../qml/pages/util/FindExpensePhone.qml:248
+msgid "Found"
+msgstr "Funet"
+
+#: ../qml/pages/util/FindExpensePhone.qml:248
+msgid "expense in the date range"
+msgstr "utgift innenfor intervallet"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:56
+msgid "Remove Expenses in the range (no restore)"
+msgstr "Fjern utgifter i intervallet (ingen gjenoppretting)"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:78
+msgid "expense(s)"
+msgstr "utgift(er)"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:98
+msgid "GENERAL SETTINGS (** Restart is required after update ** )"
+msgstr "GENERELLE INNSTILLINGER (** Omstart kreves etter oppdatering **)"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "MAINTENANCE:"
+msgstr "VEDLIKEHOLD"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "Remove expenses for a category and subCategory"
+msgstr "Fjern utgifter for en kategori og underkategori"
+
+#: ../qml/pages/util/ConfigurationPhone.qml:194
+msgid "There is NO restore !"
+msgstr "Det er INGEN gjenoppretting !"
+
+#: ../qml/pages/CategoryListPage.qml:36
+msgid "About"
+msgstr "Om"
+
+#: ../qml/pages/CategoryListPage.qml:46
+msgid "Add"
+msgstr "Legg til"
+
+#: ../qml/pages/CategoryListPage.qml:62
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: ../qml/pages/CategoryListPage.qml:143
+msgid "category to search"
+msgstr "kategori å søke i"
+
+#: ../qml/pages/CategoryListPage.qml:155
+msgid "Search"
+msgstr "Søk"
+
+#: ../qml/pages/CategoryListPage.qml:180
+msgid "Total category found"
+msgstr "Total kategori funnet"
+
+#: ../qml/pages/CategoryListPage.qml:194
+msgid "Global Reports"
+msgstr "Globale rapporter"
+
+#: ../qml/pages/EditExpensePage.qml:40
+msgid "Edit Expense for category"
+msgstr "Rediger utgift for kategori"
+
+#: ../qml/pages/GlobalReportPage.qml:28
+msgid "Category Global Report"
+msgstr "Kategori global rapport"
+
+#: ../qml/pages/AddCategoryPage.qml:28
+msgid "Add new Category and subcategory"
+msgstr "Legg til ny kategori og underkategori"
+
+#: ../qml/pages/FindExpensePage.qml:36
+msgid "Find Expense for category"
+msgstr "Finn utgift for kategori"
+
+#: ../qml/pages/ConfigurationPage.qml:31
+msgid "Application Configuration"
+msgstr "Applikasjonskonfigurasjon"
+
+#: ../qml/ItemNotFound.qml:9
+msgid "No Data Found"
+msgstr "Ingen data funnet"
+
+#: ../qml/AboutProduct.qml:10
+msgid "Product Info"
+msgstr "Produktinfo"
+
+#: ../qml/AboutProduct.qml:11
+msgid "version"
+msgstr "versjon"
+
+#: ../qml/AboutProduct.qml:11
+msgid "Author"
+msgstr "Forfatter"
+
+#: ../qml/ReportSelectorForm.qml:154
+msgid "Monthly"
+msgstr "Månedlig"
+
+#: ../qml/ReportSelectorForm.qml:155
+msgid "weekly"
+msgstr "ukentlig"
+
+#: ../qml/ReportSelectorForm.qml:178
+msgid "Choose a Category..."
+msgstr "Velg en kategori..."
+
+#: ../qml/ReportSelectorForm.qml:190
+msgid "ALL Category"
+msgstr "ALLE kategorier"
+
+#: ../qml/ReportSelectorForm.qml:199
+msgid "Report Type..."
+msgstr "Rapporttype"
+
+#: ../qml/ReportSelectorForm.qml:208
+msgid "Generate"
+msgstr "Generer"
+
+#: MyFinance.desktop.in.h:1
+msgid "MyFinance"
+msgstr "MinFinans"
